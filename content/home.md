@@ -8,8 +8,8 @@ content:
 - template: content-right
   content:
   - name: intro
-    content-block: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    content-block: "#### Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     extra_content_container: []
   title-top: Hoe verander je
   title-bottom: oude gewoontes?
