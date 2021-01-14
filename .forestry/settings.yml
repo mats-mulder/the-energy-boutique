@@ -4,6 +4,13 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: directory
+  path: content/extra_content_container
+  label: Extra Content Container
+  create: documents
+  match: "**/*"
+  templates:
+  - extra-content-container
 - type: document
   path: content/hello.md
   label: test
