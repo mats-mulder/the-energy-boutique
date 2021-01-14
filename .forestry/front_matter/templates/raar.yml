@@ -17,3 +17,6 @@ fields:
   config:
     min: 
     max: 
+pages:
+- content/home.md
+- content/wat-we-oplossen.md
