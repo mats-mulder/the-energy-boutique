@@ -12,17 +12,10 @@ fields:
   config:
     required: false
   label: title-bottom
-- name: test
-  type: blocks
-  label: test
-  template_types: []
-  config:
-    min: 
-    max: 
 - name: content
   type: field_group_list
   config:
     min: 
     max: 
     labelField: 
-  label: content
+  label: Content
