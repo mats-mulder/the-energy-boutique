@@ -5,9 +5,12 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: content/hello.md
+  label: test
+  match: "**/*"
+- type: document
   path: content/wat-we-oplossen.md
   label: Wat we oplossen
-  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
