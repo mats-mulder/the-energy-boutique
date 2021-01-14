@@ -13,9 +13,10 @@ fields:
     required: false
   label: title-bottom
 - name: content
-  type: field_group_list
+  type: blocks
+  label: Content
+  template_types:
+  - content
   config:
     min: 
     max: 
-    labelField: 
-  label: Content
