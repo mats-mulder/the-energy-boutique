@@ -7,7 +7,6 @@ sections:
 - type: document
   path: content/hello.md
   label: test
-  match: "**/*"
 - type: document
   path: content/wat-we-oplossen.md
   label: Wat we oplossen
