@@ -24,6 +24,18 @@ fields:
       schema:
         format: markdown
     label: content-block
+  - name: extra_content_container
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: pages
+        section: extra-content-container
+        file: 
+        path: 
+    label: Extra Content Container
   config:
     min: 
     max: 
