@@ -13,26 +13,19 @@ fields:
     required: false
   label: title-bottom
 - name: content
-  type: blocks
-  label: Content
-  template_types:
-  - content
-  config:
-    min: 
-    max: 
-- name: test
-  type: list
-  config:
-    use_select: false
-    min: 
-    max: 
-    source:
-      type: documents
-  label: test
-- name: ere
   type: field_group_list
+  fields:
+  - name: content-block
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: content-block
   config:
     min: 
     max: 
     labelField: 
-  label: ere
+  label: Content
