@@ -1,0 +1,15 @@
+---
+label: Quote Page
+hide_body: true
+display_field: Author
+fields:
+- name: Quote
+  type: text
+  config:
+    required: true
+  label: quote
+- name: Author
+  type: text
+  config:
+    required: true
+  label: author
