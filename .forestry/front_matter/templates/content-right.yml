@@ -20,3 +20,19 @@ fields:
   config:
     min: 
     max: 
+- name: test
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+    source:
+      type: documents
+  label: test
+- name: ere
+  type: field_group_list
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: ere
