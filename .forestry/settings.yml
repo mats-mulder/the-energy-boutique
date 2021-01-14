@@ -9,23 +9,20 @@ sections:
 - type: document
   path: content/home.md
   label: Home
-  match: "**/*"
 - type: document
   path: content/wat-we-oplossen.md
   label: Wat we oplossen
 - type: document
   path: content/onze-aanpak.md
   label: Onze aanpak
-  match: "**/*"
 - type: document
   path: content/contact.md
   label: Contact
-  match: "**/*"
 - type: heading
-  label: Extra Content Container
+  label: Extra Content Containers
 - type: directory
   path: content/extra_content_container
-  label: Extra Content Container
+  label: Containers
   create: documents
   match: "**/*"
   templates:
