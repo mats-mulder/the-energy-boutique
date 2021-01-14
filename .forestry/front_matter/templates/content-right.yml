@@ -2,24 +2,29 @@
 label: Content Right
 hide_body: true
 fields:
-- name: title_top
-  type: textarea
-  default: ''
-  config:
-    required: true
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: Title Top
-- name: title_bottom
-  type: textarea
-  default: ''
-  config:
-    required: true
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: Title Bottom
+- name: title
+  type: field_group
+  config: {}
+  fields:
+  - name: top
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: top
+  - name: bottom
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: bottom
+  label: Title
 - name: content
   type: field_group_list
   fields:
