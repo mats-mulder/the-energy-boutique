@@ -16,3 +16,38 @@ fields:
     schema:
       format: markdown
   label: content
+- name: quote
+  type: field_group
+  config: {}
+  fields:
+  - name: quote
+    type: text
+    config:
+      required: false
+    label: quote
+  - name: author
+    type: text
+    config:
+      required: false
+    label: author
+  label: Quote
+- name: call_to_action
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: title
+  - name: description
+    type: text
+    config:
+      required: false
+    label: description
+  - name: button
+    type: text
+    config:
+      required: false
+    label: button
+  label: call to action
