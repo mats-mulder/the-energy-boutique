@@ -19,7 +19,9 @@ export default {
     script: [
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js'},
       { src:  'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js'},
-      { src: '/js/gsap.js'}
+      { src: '/js/gsap.js'},
+      { src: '/js/main.js'},
+      { src: 'https://assets.codepen.io/16327/DrawSVGPlugin3.min.js'}
     ]
   },
 
