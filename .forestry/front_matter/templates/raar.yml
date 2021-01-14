@@ -2,8 +2,12 @@
 label: raar
 hide_body: false
 fields:
-- name: test
-  type: text
+- name: content
+  type: blocks
+  label: content
+  template_types:
+  - content-right
+  - page
   config:
-    required: false
-  label: test
+    min: 
+    max: 
