@@ -1,6 +1,6 @@
 ---
-label: raar
-hide_body: false
+label: Pagina
+hide_body: true
 fields:
 - name: content
   type: blocks
@@ -11,3 +11,5 @@ fields:
   config:
     min: 
     max: 
+pages:
+- content/hello.md
