@@ -6,11 +6,11 @@ content:
     met moeite overeind komen
   Author: Hans Bijloos
 - template: content-right
-  content:
-  - content-block: "#### Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    extra_content_container: []
+  content: []
   title-top: Hoe verander je
   title-bottom: oude gewoontes?
+  title:
+    top: Hoe _verander_ je
+    bottom: _oude_ gewoontes?
 
 ---
