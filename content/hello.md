@@ -12,7 +12,8 @@ content:
   title-top: Hoe verander je
   title-bottom: oude gewoontes?
   test: []
-  content: []
+  content:
+  - content-block: hoi test
 page_title: Wat we oplossen
 
 ---
