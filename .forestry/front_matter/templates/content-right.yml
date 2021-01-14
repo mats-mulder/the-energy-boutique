@@ -18,7 +18,7 @@ fields:
   - name: name
     type: text
     config:
-      required: false
+      required: true
     label: Name
   - name: content-block
     type: textarea
@@ -44,5 +44,5 @@ fields:
   config:
     min: 
     max: 
-    labelField: 
+    labelField: name
   label: Content
