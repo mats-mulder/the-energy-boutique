@@ -24,6 +24,18 @@ fields:
       schema:
         format: markdown
     label: content-block
+  - name: test
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: test
   config:
     min: 
     max: 
