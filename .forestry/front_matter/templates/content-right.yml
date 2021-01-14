@@ -15,6 +15,11 @@ fields:
 - name: content
   type: field_group_list
   fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
   - name: content-block
     type: textarea
     default: ''
