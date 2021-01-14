@@ -18,6 +18,7 @@ fields:
     min: 
     max: 
 pages:
+- content/contact.md
 - content/home.md
 - content/onze-aanpak.md
 - content/wat-we-oplossen.md
