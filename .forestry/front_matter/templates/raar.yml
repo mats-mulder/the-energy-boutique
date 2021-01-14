@@ -1,7 +1,13 @@
 ---
 label: Pagina
 hide_body: true
+display_field: page_title
 fields:
+- name: page_title
+  type: text
+  config:
+    required: true
+  label: Pagine Titel
 - name: content
   type: blocks
   label: content
