@@ -7,11 +7,20 @@ sections:
 - type: heading
   label: Pages
 - type: document
-  path: content/hello.md
-  label: test
+  path: content/home.md
+  label: Home
+  match: "**/*"
 - type: document
   path: content/wat-we-oplossen.md
   label: Wat we oplossen
+- type: document
+  path: content/onze-aanpak.md
+  label: Onze aanpak
+  match: "**/*"
+- type: document
+  path: content/contact.md
+  label: Contact
+  match: "**/*"
 - type: heading
   label: Extra Content Container
 - type: directory
