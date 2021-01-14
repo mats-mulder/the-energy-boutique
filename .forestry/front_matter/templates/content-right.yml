@@ -1,4 +1,28 @@
 ---
 label: Content Right
 hide_body: true
-fields: []
+fields:
+- name: title-top
+  type: text
+  config:
+    required: true
+  label: title-top
+- name: title-bottom
+  type: text
+  config:
+    required: false
+  label: title-bottom
+- name: test
+  type: blocks
+  label: test
+  template_types: []
+  config:
+    min: 
+    max: 
+- name: content
+  type: field_group_list
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: content
