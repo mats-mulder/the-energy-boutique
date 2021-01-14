@@ -4,6 +4,16 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: Extra Content Container
+- type: heading
+  label: Pages
+- type: document
+  path: content/hello.md
+  label: test
+- type: document
+  path: content/wat-we-oplossen.md
+  label: Wat we oplossen
 - type: directory
   path: content/extra_content_container
   label: Extra Content Container
@@ -11,12 +21,6 @@ sections:
   match: "**/*"
   templates:
   - extra-content-container
-- type: document
-  path: content/hello.md
-  label: test
-- type: document
-  path: content/wat-we-oplossen.md
-  label: Wat we oplossen
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
