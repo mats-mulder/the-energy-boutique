@@ -27,11 +27,5 @@ content:
     extra_content_container: []
   introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua.
-- template: content-right
-  title:
-    top: "<em>ew few</em>"
-    bottom: _ewefew_
-  introduction: dw
-  content: []
 
 ---
