@@ -8,7 +8,7 @@ content:
 - template: content-right
   title:
     top: "<pre><code>hoe &lt;i&gt;verander&lt;/i&gt; je</code></pre>"
-    bottom: "<p><em>oude </em>gewoontes?</p>"
+    bottom: "<pre><code>&lt;i&gt;oude&lt;/i&gt;<em> </em>gewoontes?</code></pre>"
   introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua.
   content: []
