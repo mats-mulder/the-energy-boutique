@@ -13,7 +13,7 @@ fields:
       required: true
       wysiwyg: true
       schema:
-        format: markdown
+        format: html-blocks
     label: top
   - name: bottom
     type: textarea
@@ -22,7 +22,7 @@ fields:
       required: true
       wysiwyg: true
       schema:
-        format: markdown
+        format: html-blocks
     label: bottom
   label: Title
 - name: introduction
@@ -49,7 +49,7 @@ fields:
       required: true
       wysiwyg: true
       schema:
-        format: markdown
+        format: html-blocks
     label: content-block
   - name: extra_content_container
     type: select
