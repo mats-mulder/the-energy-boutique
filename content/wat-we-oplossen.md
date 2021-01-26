@@ -7,7 +7,7 @@ content:
   Author: Hans Bijloos
 - template: content-right
   title:
-    top: "<p>Hoe <em>verander </em>je</p>"
+    top: Hoe <em>verander </em>je
     bottom: _oude_ gewoontes?
   content:
   - name: Lorem ipsum
