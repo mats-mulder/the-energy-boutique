@@ -68,7 +68,11 @@
 
 <script>
 export default {
-  name: "Footer"
+  name: "Footer",
+  props: {
+    footerLink: String,
+  },
+
 }
 </script>
 
@@ -80,7 +84,6 @@ export default {
   bottom: 0;
   width: 100%;
   z-index: 40;
-  background-color: var(--indigo);
 }
 
 .social-holder{
@@ -95,7 +98,6 @@ export default {
 }
 
 .social-logo{
-  background-color: var(--oxford);
   border-radius: 100px;
   width: 4vh;
   height: 4vh;
@@ -104,19 +106,14 @@ export default {
 
 .social-logo:hover{
   transform: scale(0.9);
-  background-color: var(--curry);
 }
 
 .progress{
   width: 200px;
   border-radius: 0;
   height: 3px;
-  background-color: var(--oxford);
 }
 
-.progress-bar{
-  background-color: white;
-}
 
 .footer-page-title{
   font-size: 0.8rem;

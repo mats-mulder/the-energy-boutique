@@ -9,15 +9,15 @@
         </svg>
       </div>
       <div id="menu-overlay">
-        <div class="close-btn">
-          <svg onclick="closeMenu()" width="31" height="25" viewBox="0 0 31 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div id="close-btn" onclick="closeMenu()">
+          <svg width="31" height="25" viewBox="0 0 31 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect y="11" width="19" height="3" fill="#524B38"/>
             <path d="M30.6553 11.842C23.2079 15.0373 19.4819 17.2224 16.0001 24.9999L17.1274 12.5L16.0001 -5.01935e-05C20.3389 8.61932 24.1641 9.17575 30.6553 11.842Z" fill="#524B38"/>
           </svg>
         </div>
         <div class="container" style="padding-top: 15vh">
           <div class="row">
-            <div class="col-12">
+            <div class="col-12"id="menu-language-choice">
               <h5><span id="language-nl" class="current-language language-choice">NL</span> / <span class="language-choice" id="language-eng">ENG</span></h5>
             </div>
           </div>
@@ -121,7 +121,6 @@ p{
   position: absolute;
   right: 20px;
   top: 20px;
-  background-color: var(--indigo);
   border-radius: 500px;
   height: 60px;
   width: 60px;
@@ -130,7 +129,6 @@ p{
 
 .menu-btn-holder:hover{
   transform: scale(0.9);
-  background-color: var(--curry);
   cursor: pointer;
 }
 
@@ -143,9 +141,7 @@ p{
   height: 100vh;
   z-index: 450;
   display: none;
-  opacity: 0;
-  margin-top: -50px;
-  background-color: var(--curry);
+  margin-left: 100vw;
   width: 100%;
   position: fixed;
 }
@@ -154,9 +150,9 @@ p{
   font-family: 'Arapey', serif;
   font-size: 8vh;
   line-height: 120%;
-  transition: 200ms;
+  transition: 250ms;
   opacity: 0;
-  margin-left: -20px;
+  margin-left: -40px;
 }
 
 .menu-option:hover{
@@ -165,18 +161,15 @@ p{
 }
 
 #menu-overlay-contact{
-  background-color: var(--timberwolf);
   position: fixed;
   bottom: 0;
 }
 
 #menu-overlay-contact h4{
-  color: var(--brown);
-  font-size: 2.5vh;
+   font-size: 2.5vh;
 }
 
 #menu-overlay-contact p{
-  color: var(--brown);
   margin: 0;
 }
 
@@ -202,7 +195,7 @@ p{
   font-weight: bold;
 }
 
-.close-btn{
+#close-btn{
   position: absolute;
   right: 20px;
   top: 20px;
@@ -214,9 +207,29 @@ p{
   width: 60px;
 }
 
-.close-btn:hover{
+#close-btn:hover{
   transform: scale(0.9);
   cursor: pointer;
 }
+
+.section-fix{
+  min-height: 100vh;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 0;
+  opacity: 0;
+}
+
+i{
+  text-decoration: underline var(--curry);
+  text-decoration-thickness: 7px;
+}
+
+.page-text{
+  opacity: 0;
+}
+
+
 
 </style>

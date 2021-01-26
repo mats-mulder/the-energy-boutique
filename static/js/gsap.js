@@ -31,20 +31,7 @@ function initGsap(){
     tl.to(fix, {opacity: 0, duration: 3},12)
   })
 
-  const next_tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: '#next-page-btn',
-      start: 'top 90%',
-      end: 'top 65%',
-      scrub: true,
-      onLeave: function (){
-        window.location = '../contact'
-      }
-    }
-  })
-    next_tl.to('#next-page-btn', {opacity:1},0)
-    next_tl.to('#next-page-underline', {width:80},0)
-  next_tl.to('#next-page-arrow', {marginTop:15},0)
+
 }
 
 //Set information in footer navigation
