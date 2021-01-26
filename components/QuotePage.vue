@@ -3,8 +3,8 @@
     <div class="row">
       <div class="col-9 quote-holder">
         <div class="quote">
-          <p class="quote-text">Wanneer ik met een kleinkind op de grond had zitten spelen kon ik slechts met moeite overeind komen</p>
-          <p class="quote-author"> Mats Mulder</p>
+          <p class="quote-text">{{ quoteText }}</p>
+          <p class="quote-author">{{ quoteAuthor }}</p>
 
         </div>
       </div>
@@ -14,7 +14,11 @@
 
 <script>
 export default {
-name: "QuotePage"
+  name: "QuotePage",
+  props:{
+    quoteText: String,
+    quoteAuthor: String,
+  }
 }
 </script>
 

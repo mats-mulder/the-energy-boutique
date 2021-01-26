@@ -1,22 +1,13 @@
 <template>
   <div>
-    <section id="section-1">
+
+    <section v-for="(section, index) in content.content" :key="index">
       <div class="section-fix">
-        <QuotePage></QuotePage>
+        <QuotePage v-if="section.template === 'page'" :quoteAuthor="section.Author" :quoteText="section.Quote"></QuotePage>
+        <ContentRight v-if="section.template === 'content-right'" :title="section.title" :content="section.content" :introduction="section.introduction"></ContentRight>
       </div>
     </section>
 
-    <section id="section-2">
-      <div class="section-fix">
-        <ContentRight></ContentRight>
-      </div>
-    </section>
-
-    <section id="section-3">
-      <div class="section-fix">
-        <large-image></large-image>
-      </div>
-    </section>
 
     <NextPage v-if="footerLink" :footerLink="footerLink"></NextPage>
     <Footer ></Footer>
@@ -41,6 +32,13 @@ export default {
   data(){
     return{
       footerLink: '../onze-aanpak'
+    }
+  },
+  async asyncData ({ $content }) {
+    const content = await $content('wat-we-oplossen').fetch()
+    console.log(content)
+    return {
+      content
     }
   }
 }

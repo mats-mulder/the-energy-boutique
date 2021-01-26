@@ -7,17 +7,16 @@
 
     <div class="col-12 col-md-6" style="padding-top: 50vh; padding-left: 75px">
       <div style="margin-left: -10vw">
-        <h1 class="page-title-top">Hoe <i>verander</i> je</h1>
-        <h1 class="page-title-bottom"><i>oude</i> gewoontes?</h1>
+        <h1 class="page-title-top">{{ title.top }}</h1>
+        <h1 class="page-title-bottom" v-html="title.bottom"></h1>
       </div>
       <div class="mt-5 page-text">
-        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
-        <h4>Lorem ipsum</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-        <h4>Excepteur sint occaecat</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+        <h5>{{ introduction }}</h5>
+        <div class="mt-4" v-for="item in content">
+          <h4>{{ item.title }}</h4>
+          <p>{{ item['content-block'] }}</p>
+        </div>
       </div>
-
     </div>
   </div>
 </template>
@@ -25,6 +24,11 @@
 <script>
 export default {
   name: "ContentRight",
+  props:{
+    title: Object,
+    introduction: String,
+    content: Object
+  },
   mounted() {
 
   }
