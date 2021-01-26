@@ -1,15 +1,15 @@
 ---
-label: Quote Page
+label: quote
 hide_body: true
 display_field: Author
 fields:
-- name: Quote
+- name: quote
   type: text
   config:
     required: true
-  label: quote
-- name: Author
+  label: Quote
+- name: author
   type: text
   config:
     required: true
-  label: author
+  label: Author
