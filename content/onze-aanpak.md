@@ -1,5 +1,8 @@
 ---
 page_title: Onze aanpak
-content: []
+content:
+- template: page
+  quote: test
+  author: test
 
 ---
