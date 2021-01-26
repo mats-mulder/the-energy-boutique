@@ -25,6 +25,11 @@ fields:
         format: markdown
     label: bottom
   label: Title
+- name: introduction
+  type: text
+  config:
+    required: true
+  label: Introduction
 - name: content
   type: field_group_list
   fields:
