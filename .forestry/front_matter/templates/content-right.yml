@@ -26,9 +26,13 @@ fields:
     label: bottom
   label: Title
 - name: introduction
-  type: text
+  type: textarea
+  default: ''
   config:
     required: true
+    wysiwyg: false
+    schema:
+      format: markdown
   label: Introduction
 - name: content
   type: field_group_list
@@ -37,7 +41,7 @@ fields:
     type: text
     config:
       required: true
-    label: Name
+    label: Title
   - name: content-block
     type: textarea
     default: ''
