@@ -1,6 +1,9 @@
 ---
 page_title: Wat we oplossen
-
-content: []
+content:
+- template: page
+  quote: Wanneer ik met een kleinkind op de grond had zitten spelen kon ik slechts
+    met moeite overeind komen
+  author: Hans Bijloos
 
 ---
