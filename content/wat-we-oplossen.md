@@ -5,5 +5,11 @@ content:
   quote: Wanneer ik met een kleinkind op de grond had zitten spelen kon ik slechts
     met moeite overeind komen
   author: Hans Bijloos
+- template: content-right
+  title:
+    top: hoe _verander_ je
+    bottom: "<p><em>oude</em> gewoontes?</p>"
+  introduction: test
+  content: []
 
 ---
