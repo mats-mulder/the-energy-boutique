@@ -13,7 +13,7 @@ fields:
       required: true
       wysiwyg: true
       schema:
-        format: markdown
+        format: html-blocks
     label: top
   - name: bottom
     type: textarea
