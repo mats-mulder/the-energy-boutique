@@ -66,5 +66,5 @@ fields:
   config:
     min: 
     max: 
-    labelField: name
+    labelField: title
   label: Content
