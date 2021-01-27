@@ -7,7 +7,7 @@ content:
   author: Hans Bijloos
 - template: content-right
   title:
-    top: hoe _verander_ je
+    top: "<p>Hoe <em>verander </em>je</p>"
     bottom: "<p><em>oude</em> gewoontes?</p>"
   introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua.
