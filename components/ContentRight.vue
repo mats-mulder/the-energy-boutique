@@ -7,7 +7,7 @@
 
     <div class="col-12 col-md-6" style="padding-top: 50vh; padding-left: 75px">
       <div style="margin-left: -10vw">
-        <h1 class="page-title-top">{{ title.top }}</h1>
+        <h1 class="page-title-top" v-html="title.top"></h1>
         <h1 class="page-title-bottom" v-html="title.bottom"></h1>
       </div>
       <div class="mt-5 page-text">
@@ -27,10 +27,17 @@ export default {
   props:{
     title: Object,
     introduction: String,
-    content: Object
+    content: Array
   },
   mounted() {
-
+    let top = document.getElementsByClassName('page-title-top')[0].getElementsByTagName('em')[0]
+    let new_top = document.createElement('i');
+    new_top.innerHTML = top.innerHTML;
+    top.parentNode.replaceChild(new_top, top);
+    let bottom = document.getElementsByClassName('page-title-bottom')[0].getElementsByTagName('em')[0]
+    let new_bottom = document.createElement('i');
+    new_bottom.innerHTML = bottom.innerHTML;
+    bottom.parentNode.replaceChild(new_bottom, bottom);
   }
 }
 </script>
@@ -60,5 +67,7 @@ export default {
   width: 75vw;
   object-fit: cover;
 }
+
+
 
 </style>

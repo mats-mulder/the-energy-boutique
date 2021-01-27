@@ -7,7 +7,7 @@ content:
   author: Hans Bijloos
 - template: content-right
   title:
-    top: hoe _verander_ je
+    top: "<p>hoe <em>verander</em> je</p>"
     bottom: "<p><em>oude</em> gewoontes?</p>"
   introduction: test
   content: []

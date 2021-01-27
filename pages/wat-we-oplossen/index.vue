@@ -3,7 +3,7 @@
 
     <section v-for="(section, index) in content.content" :key="index">
       <div class="section-fix">
-        <QuotePage v-if="section.template === 'page'" :quoteAuthor="section.Author" :quoteText="section.Quote"></QuotePage>
+        <QuotePage v-if="section.template === 'page'" :quoteAuthor="section.author" :quoteText="section.quote"></QuotePage>
         <ContentRight v-if="section.template === 'content-right'" :title="section.title" :content="section.content" :introduction="section.introduction"></ContentRight>
       </div>
     </section>
@@ -36,7 +36,6 @@ export default {
   },
   async asyncData ({ $content }) {
     const content = await $content('wat-we-oplossen').fetch()
-    console.log(content)
     return {
       content
     }

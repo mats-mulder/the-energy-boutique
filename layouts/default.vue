@@ -87,7 +87,7 @@ body{
 
 h1{
   font-family: 'Arapey', serif;
-  font-size: 5.5rem;
+  font-size: 8vh;
   color: white;
 }
 
@@ -229,6 +229,9 @@ i{
 .page-text{
   opacity: 0;
 }
+
+
+
 
 
 

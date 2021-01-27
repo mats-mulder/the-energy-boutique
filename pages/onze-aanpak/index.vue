@@ -1,8 +1,10 @@
 <template>
   <div id="page-holder">
-    <section id="section-1">
+
+    <section v-for="(section, index) in content.content" :key="index">
       <div class="section-fix">
-        <ContentRight></ContentRight>
+        <QuotePage v-if="section.template === 'page'" :quoteAuthor="section.author" :quoteText="section.quote"></QuotePage>
+        <ContentRight v-if="section.template === 'content-right'" :title="section.title" :content="section.content" :introduction="section.introduction"></ContentRight>
       </div>
     </section>
 
@@ -24,6 +26,12 @@ export default {
     document.addEventListener('DOMContentLoaded', (event) => {
       initGsap()
     })
+  },
+  async asyncData ({ $content }) {
+    const content = await $content('onze-aanpak').fetch()
+    return {
+      content
+    }
   },
   data(){
     return{
@@ -64,11 +72,11 @@ body{
 }
 
 .progress{
-  background-color: var(--brown);
+  background-color: var(--silver);
 }
 
 .progress-bar{
-  background-color: var(--silver);
+  background-color: var(--brown);
 }
 
 .menu-btn-holder{

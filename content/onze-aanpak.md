@@ -9,17 +9,17 @@ content:
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
     nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
   content:
-  - name: Relief
+  - title: Relief
     content-block: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
       do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam.</p>"
     extra_content_container: []
-  - name: Movement
+  - title: Movement
     content-block: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
       do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation. </p>"
     extra_content_container: []
-  - name: Nutrition
+  - title: Nutrition
     content-block: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
       do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
     extra_content_container: []
