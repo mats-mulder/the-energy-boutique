@@ -10,7 +10,7 @@ content:
     top: "<p>Hoe <em>verander</em> je</p>"
     bottom: "<p><em>oude</em> gewoontes?</p>"
   introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua.
+    tempor incididunt ut labore et dolore magna aliqvrua.
   content:
   - title: Lorem ipsum
     content-block: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -27,5 +27,6 @@ content:
       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
       dolore eu fugiat nulla pariatur.</p>"
     extra_content_container: []
+  image: "/uploads/duinen.jpg"
 
 ---
