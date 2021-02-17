@@ -27,6 +27,6 @@ content:
       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
       dolore eu fugiat nulla pariatur.</p>"
     extra_content_container: []
-  image: "/uploads/duinen.jpg"
+  image: "/images/duinen.jpg"
 
 ---
