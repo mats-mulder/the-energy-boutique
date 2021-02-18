@@ -20,7 +20,7 @@ content:
       kan leiden tot pijnklachten. Dit zorgt er dan vaak voor dat je minder gaat bewegen.
       Wij maken een bewegingsprogramma dat realistisch is, bij jouw persoonlijke situatie
       past en voor positieve veranderingen zorgt.</p>"
-    extra_content_container: []
+    extra_content_container: content/extra_content_container/movement.md
   - title: 'Voeding '
     content-block: "<p>Het perfecte voedingspatroon bestaat niet. Het gaat erom dat
       je een voedingspatroon vindt dat bij jou past en waar jij je gezond, fit en
