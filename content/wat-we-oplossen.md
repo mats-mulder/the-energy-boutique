@@ -8,9 +8,10 @@ content:
   title:
     top: "<p>Een <em>holistische </em>aanpak</p>"
     bottom: "<p>gericht op de<em> lange </em>termijn?</p>"
-  introduction: Beweging, voeding en ontspanning in de juiste balans is waar het om
-    gaat om je gezond, vitaal en goed in je vel te voelen. Met jouw eigen op maat
-    gemaakte leefstijlprogramma gaan we voor optimaal resultaat.
+  introduction: The Energy Boutique gelooft in een holistisch aanpak. De juiste balans
+    in beweging, voeding en ontspanning is dé sleutel om je gezond, vitaal en goed
+    in je vel te voelen. Met jouw eigen op maat gemaakte leefstijlprogramma gaan we
+    voor optimaal resultaat.
   content:
   - title: Beweging
     content-block: "<p>Ons lichaam is gemaakt om te bewegen en actief bezig te zijn,
