@@ -8,8 +8,9 @@ content:
   title:
     top: "<p>Een <em>holistische </em>aanpak</p>"
     bottom: "<p>gericht op de<em> lange </em>termijn?</p>"
-  introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqvrua.
+  introduction: Beweging, voeding en ontspanning in de juiste balans is waar het om
+    gaat om je gezond, vitaal en goed in je vel te voelen. Met jouw eigen op maat
+    gemaakte leefstijlprogramma gaan we voor optimaal resultaat.
   content:
   - title: Lorem ipsum
     content-block: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
