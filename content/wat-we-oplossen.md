@@ -32,6 +32,15 @@ content:
       je met een gezond en gevarieerd voedingspatroon. Realistisch, praktisch, niets
       uitsluitend, passend in jouw persoonlijke leven en gewoon lekker.</p>"
     extra_content_container: []
+  - title: Coaching
+    content-block: "<p>Goed in je vel zitten en meer energiek in het leven staan is
+      nooit afhankelijk van slechts één onderdeel. Daarom kijken wij naar het geheel
+      van jou. Voor een totale vitaliteit is naast een gezond lichaam, ook een gezonde
+      geest belangrijk. In de gesprekken die je hebt met onze coach sta jij met jouw
+      doel(en) centraal, zodat jij de veranderingen kan realiseren die voor jou belangrijk
+      zijn. De coaching biedt inzichten en praktische tools om, in de dagelijkse drukte,
+      andere keuzes te maken zodat jij jouw doelen kan behalen en kan behouden.</p>"
+    extra_content_container: []
   image: "/images/duinen.jpg"
 
 ---
