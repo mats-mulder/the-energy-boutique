@@ -21,12 +21,16 @@ content:
       Wij maken een bewegingsprogramma dat realistisch is, bij jouw persoonlijke situatie
       past en voor positieve veranderingen zorgt.</p>"
     extra_content_container: []
-  - title: Excepteur sint occaecat
-    content-block: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-      do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-      dolore eu fugiat nulla pariatur.</p>"
+  - title: 'Voeding '
+    content-block: "<p>Het perfecte voedingspatroon bestaat niet. Het gaat erom dat
+      je een voedingspatroon vindt dat bij jou past en waar jij je gezond, fit en
+      energiek bij voelt! En niet onbelangrijk wat past in jouw leven en situatie.
+      Maar hoe bereik je dat? De meningen zijn verdeeld. Voeding trends, hypes en
+      adviezen volgen elkaar in hoog tempo op. We zien door het bomen het bos niet
+      meer en weten niet meer wat we moeten geloven. Het voedingsprogramma van The
+      Energy Boutique helpt je om feiten van fictie te onderscheiden en we helpen
+      je met een gezond en gevarieerd voedingspatroon. Realistisch, praktisch, niets
+      uitsluitend, passend in jouw persoonlijke leven en gewoon lekker.</p>"
     extra_content_container: []
   image: "/images/duinen.jpg"
 
