@@ -61,5 +61,3 @@ fields:
       required: false
     label: button
   label: call to action
-pages:
-- content/extra_content_container/test.md
