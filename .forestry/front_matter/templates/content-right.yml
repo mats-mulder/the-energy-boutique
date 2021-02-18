@@ -68,6 +68,11 @@ fields:
         file: 
         path: 
     label: Extra Content Container
+  - name: extra_content
+    type: include
+    config: {}
+    template: extra-content-container
+    label: Extra content
   config:
     min: 
     max: 
