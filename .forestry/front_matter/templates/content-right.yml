@@ -57,24 +57,18 @@ fields:
         format: html-blocks
     label: content-block
   - name: extra_content_container
-    type: select
-    default: []
-    config:
-      required: false
-      options: []
-      source:
-        type: pages
-        section: extra-content-container
-        file: 
-        path: 
+    type: field_group
+    config: {}
+    fields:
+    - name: active
+      type: boolean
+      label: Active
+    - name: extra_content
+      type: include
+      config: {}
+      template: extra-content-container
+      label: Extra content
     label: Extra Content Container
-  - name: extra_content
-    type: field_group_list
-    config:
-      min: 0
-      max: 1
-      labelField: 
-    label: Extra content
   config:
     min: 
     max: 

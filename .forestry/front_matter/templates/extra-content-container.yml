@@ -5,7 +5,7 @@ fields:
 - name: title
   type: text
   config:
-    required: true
+    required: false
   label: title
 - name: image
   type: file
@@ -16,7 +16,7 @@ fields:
   type: textarea
   default: ''
   config:
-    required: true
+    required: false
     wysiwyg: true
     schema:
       format: markdown
@@ -61,5 +61,3 @@ fields:
       required: false
     label: button
   label: call to action
-pages:
-- content/extra_content_container/movement.md
