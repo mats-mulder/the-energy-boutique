@@ -52,7 +52,7 @@ fields:
     default: ''
     config:
       required: true
-      wysiwyg: true
+      wysiwyg: false
       schema:
         format: html-blocks
     label: content-block
