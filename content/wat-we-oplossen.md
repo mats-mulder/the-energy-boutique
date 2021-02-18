@@ -6,8 +6,8 @@ content:
   author: Mats Mulder
 - template: content-right
   title:
-    top: "<p>Hoe <em>verander</em> je</p>"
-    bottom: "<p><em>oude</em> gewoontes?</p>"
+    top: "<p>Een <em>holistische </em>aanpak</p>"
+    bottom: "<p>gericht op de<em> lange </em>termijn?</p>"
   introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqvrua.
   content:
