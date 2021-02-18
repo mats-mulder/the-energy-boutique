@@ -19,7 +19,7 @@ fields:
     required: false
     wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
   label: content
 - name: quote
   type: field_group
