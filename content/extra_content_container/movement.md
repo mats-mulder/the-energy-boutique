@@ -28,8 +28,9 @@ quote:
   author: Mats Mulder
   image: "/images/schoen.jpg"
 call_to_action:
-  title: ''
-  description: ''
-  button: ''
+  title: Een keer jouw situatie bespreken?
+  description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+    doloremque laudantium, totam rem aperiam.
+  button: Plan een kennismaking  →
 
 ---
