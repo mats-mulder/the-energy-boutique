@@ -83,13 +83,10 @@ content:
           accusantium doloremque laudantium, totam rem aperiam..
         button: Plan een kennismaking
   - title: Coaching
-    content-block: Goed in je vel zitten en meer energiek in het leven staan is nooit
-      afhankelijk van slechts één onderdeel. Daarom kijken wij naar het geheel van
-      jou. Voor een totale vitaliteit is naast een gezond lichaam, ook een gezonde
-      geest belangrijk. In de gesprekken die je hebt met onze coach sta jij met jouw
-      doel(en) centraal, zodat jij de veranderingen kan realiseren die voor jou belangrijk
-      zijn. De coaching biedt inzichten en praktische tools om, in de dagelijkse drukte,
-      andere keuzes te maken zodat jij jouw doelen kan behalen en kan behouden.
+    content-block: Voor een totale vitaliteit is naast een gezond lichaam, ook een
+      gezonde geest belangrijk. De coaching biedt inzichten en praktische tools om,
+      in de dagelijkse drukte, andere keuzes te maken zodat jij jouw doelen kan behalen
+      en kan behouden.
     extra_content_container:
       active: false
       title: ''
