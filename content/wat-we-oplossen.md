@@ -51,7 +51,7 @@ content:
       quote:
         quote: Dit is een quote
         author: Mats Mulder
-        image: "/images/duinen.jpg"
+        image: "/images/beach.jpg"
       call_to_action:
         title: Een keer jouw situatie bespreken?
         description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem

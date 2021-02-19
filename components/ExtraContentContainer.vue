@@ -14,7 +14,15 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <div class="column-content" v-html="content.content"></div>
+              <div class="column-content">
+                <h5 class="mb-5">{{ content.content.introduction }}</h5>
+
+                <div class="mt-2" v-for="section in content.content.sections">
+                  <h4>{{ section.title }}</h4>
+                  <p>{{ section.content  }}</p>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
@@ -70,7 +78,7 @@ export default {
 <style scoped>
 
 .header-image-holder{
-  height: 50vh;
+  height: 35vh;
   overflow: hidden;
   width: 100%;
   background-color: var(--oxford);
@@ -81,13 +89,13 @@ export default {
 }
 
 .extra-content-title{
-  margin-top: -6vh;
+  margin-top: 10vh;
 }
 
 .content-container{
   background-color: var(--oxford);
   margin-top: -5vh;
-  padding-top: 10vh;
+  padding-top: 7vh;
   padding-bottom: 10vh;
   min-height: 50vh;
 }
