@@ -45,17 +45,20 @@ export default {
   },
   methods: {
     openExtraContent: function (name){
-      console.log(name)
-        let model = document.getElementById(name)
-        let tl = gsap.timeline()
-        tl.set(model,{marginLeft:'100vw'})
-        tl.set('.header-image',{opacity:'0', marginTop:'-5vh'})
-        tl.set(['.column-content','.extra-content-title'],{opacity:'0', paddingTop: '-2vh'})
-        tl.to(model,{marginLeft:'0'},0)
-        tl.to('.header-image',{opacity: 1, marginTop: '0'},0.3)
-        tl.to('.extra-content-title',{opacity:1, paddingTop:0},0.4)
-        tl.to('.column-content',{opacity:1, paddingTop:0},0.5)
-        $('#'+name).modal('toggle')
+      let model = document.getElementById(name)
+      let tl = gsap.timeline()
+      tl.set(model,{opacity:0})
+      tl.set('.header-image',{opacity:'0', marginTop:'-5vh'})
+      tl.set(['.column-content','.extra-content-title'],{opacity:'0', paddingTop: '-2vh'})
+      tl.to('.fixed-image-holder',{marginLeft:'-100%', duration: 0.5},0)
+      tl.to('.section-text',{left:'100%', duration: 0.5},0)
+      tl.to('.page-title-top',{marginLeft:'-150%', opacity: 0, duration: 0.5},0)
+      tl.to('.page-title-bottom',{marginLeft:'150%', opacity: 0, duration: 0.5},0)
+      tl.to(model,{opacity:1},0.4)
+      tl.to('.header-image',{opacity: 1, marginTop: '0'},0.5)
+      tl.to('.extra-content-title',{opacity:1, paddingTop:0},0.6)
+      tl.to('.column-content',{opacity:1, paddingTop:0},0.7)
+      $('#'+name).modal('toggle')
     }
   }
 }

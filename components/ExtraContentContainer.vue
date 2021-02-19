@@ -73,7 +73,7 @@ export default {
   height: 50vh;
   overflow: hidden;
   width: 100%;
-  background-color: var(--curry);
+  background-color: var(--oxford);
 }
 
 .header-image{
@@ -85,7 +85,7 @@ export default {
 }
 
 .content-container{
-  background-color: var(--curry);
+  background-color: var(--oxford);
   margin-top: -5vh;
   padding-top: 10vh;
   padding-bottom: 10vh;
@@ -172,7 +172,7 @@ p{
 }
 
 .btn-primary{
-  background-color: var(--curry);
+  background-color: var(--oxford);
   font-family: Lora;
   font-weight: bold;
   border-radius: 10vh;
