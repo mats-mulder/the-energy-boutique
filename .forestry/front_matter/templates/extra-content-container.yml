@@ -31,13 +31,13 @@ fields:
     - name: title
       type: text
       config:
-        required: true
+        required: false
       label: Title
     - name: content
       type: textarea
       default: ''
       config:
-        required: true
+        required: false
         wysiwyg: false
         schema:
           format: markdown
