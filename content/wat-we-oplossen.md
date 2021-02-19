@@ -15,11 +15,8 @@ content:
   - title: Beweging
     content-block: Ons lichaam is gemaakt om te bewegen en actief bezig te zijn, zo
       blijven we sterk en soepel. Het is wel belangrijk om het lichaam op de juiste
-      manier te trainen en te bewegen. Een verkeerde houding of beweegpatroon kan
-      een negatieve invloed hebben en voor disbalans zorgen in het lichaam wat vervolgens
-      kan leiden tot pijnklachten. Dit zorgt er dan vaak voor dat je minder gaat bewegen.
-      Wij maken een bewegingsprogramma dat realistisch is, bij jouw persoonlijke situatie
-      past en voor positieve veranderingen zorgt.
+      manier te trainen en te bewegen. Wij maken een bewegingsprogramma dat realistisch
+      is, bij jouw persoonlijke situatie past en voor positieve veranderingen zorgt.
     extra_content_container:
       active: true
       title: Movement
