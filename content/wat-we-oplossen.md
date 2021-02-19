@@ -55,26 +55,28 @@ content:
           accusantium doloremque laudantium, totam rem aperiam.
         button: Plan een kennismaking
   - title: 'Voeding '
-    content-block: Het perfecte voedingspatroon bestaat niet. Het gaat erom dat je
-      een voedingspatroon vindt dat bij jou past en waar jij je gezond, fit en energiek
-      bij voelt! En niet onbelangrijk wat past in jouw leven en situatie. Maar hoe
-      bereik je dat? De meningen zijn verdeeld. Voeding trends, hypes en adviezen
-      volgen elkaar in hoog tempo op. We zien door het bomen het bos niet meer en
-      weten niet meer wat we moeten geloven. Het voedingsprogramma van The Energy
-      Boutique helpt je om feiten van fictie te onderscheiden en we helpen je met
-      een gezond en gevarieerd voedingspatroon. Realistisch, praktisch, niets uitsluitend,
-      passend in jouw persoonlijke leven en gewoon lekker.
+    content-block: Het voedingsprogramma van The Energy Boutique helpt je om feiten
+      van fictie te onderscheiden en we helpen je met een gezond en gevarieerd voedingspatroon.
+      Realistisch, praktisch, niets uitsluitend, passend in jouw persoonlijke leven
+      en gewoon lekker.
     extra_content_container:
-      active: false
-      title: ''
-      image: ''
+      active: true
+      title: Voeding
+      image: "/images/healthy-eating-ingredients-1200x628-facebook-1200x628.jpg"
       content:
-        introduction: ''
-        sections: []
+        introduction: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+          illo inventore veritatis et quasi.
+        sections:
+        - title: Lorem Ipsum
+          content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+            ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+            explicabo. Nemo enim ipsam voluptatem.
       quote:
-        quote: ''
-        author: ''
-        image: ''
+        quote: Dit is een quote over hoe goed ik me voel
+        author: Mats Mulder
+        image: "/images/arek-adeoye-ljocgjs63sm-unsplash.jpg"
       call_to_action:
         title: ''
         description: ''
