@@ -1,11 +1,10 @@
 <template>
-  <div class="container">
+  <div class="container-fluid component-quote">
     <div class="row">
-      <div class="col-9 quote-holder">
+      <div class="col-10 offset-1 col-md-8 col-lg-7 col-xl-6 offset-xl-2 quote-holder">
         <div class="quote">
           <p class="quote-text">{{ quoteText }}</p>
           <p class="quote-author">{{ quoteAuthor }}</p>
-
         </div>
       </div>
     </div>
@@ -25,7 +24,7 @@ export default {
 <style scoped>
 
 .quote-holder{
-  margin-top: 40vh;
+  margin-top: 30vh;
   height: 80vh;
 }
 
@@ -35,7 +34,7 @@ export default {
 }
 
 .quote-text{
-  font-size: 50px;
+  font-size: 5vh  ;
   line-height: 95%;
   font-family: 'Arapey', serif;
 }
@@ -43,29 +42,30 @@ export default {
 .quote-author{
   font-family: 'Lora',serif;
   margin-top: 25px;
-  font-size: 20px;
+  font-size: 2.3vh;
+  font-weight: bold;
 }
 
 .quote-text:before{
   content:'“';
   color: #CEA018;
   font-family: 'Lora', serif;
-  font-size: 150px;
+  font-size: 15vh;
   position: absolute;
-  left: -75px;
-  font-weight: bold;
-  top: -20px;
+  left: -6vh;
+  font-weight: bolder;
+  top: -2vh;
 }
 
 .quote-text:after{
   content:'“';
   color: #CEA018;
   font-family: 'Lora', serif;
-  font-size: 150px;
+  font-size: 15vh;
   position: absolute;
   transform: rotate(180deg);
   font-weight: bold;
-  margin-left: 15px;
+  margin-top: 1vh;
 }
 
 </style>

@@ -1,16 +1,26 @@
 <template>
   <div>
 
-    <section v-for="(section, index) in content.content" :key="index">
-      <div class="section-fix">
-        <QuotePage v-if="section.template === 'page'" :quoteAuthor="section.author" :quoteText="section.quote"></QuotePage>
-        <ContentRight v-if="section.template === 'content-right'" :title="section.title" :content="section.content" :introduction="section.introduction"></ContentRight>
-      </div>
-    </section>
 
 
+    <transition-group name="fade">
+      <section v-if="show"  v-for="(section, index) in content.content" :key="index" :id="index">
+        <div class="section-fix">
+          <QuotePage v-if="section.template === 'page'" :quoteAuthor="section.author" :quoteText="section.quote"></QuotePage>
+          <ContentRight v-if="section.template === 'content-right'" :content="section"></ContentRight>
+        </div>
+      </section>
+    </transition-group>
+
+
+    <!--
     <NextPage v-if="footerLink" :footerLink="footerLink"></NextPage>
-    <Footer ></Footer>
+  -->
+
+    <Footer></Footer>
+
+
+
   </div>
 
 </template>
@@ -21,17 +31,19 @@ import LargeImage from "@/components/LargeImage";
 import ContentRight from "@/components/ContentRight";
 import Footer from "@/components/Footer";
 import NextPage from "@/components/NextPage";
+import ExtraContentContainer from "@/components/ExtraContentContainer";
 
 export default {
-  components: {NextPage, QuotePage, LargeImage, ContentRight, Footer},
+  components: {ExtraContentContainer, NextPage, QuotePage, LargeImage, ContentRight, Footer},
   mounted() {
-    document.addEventListener('DOMContentLoaded', (event) => {
-      initGsap()
-    })
+    if(checkViewport()){
+      newGsap()
+    }
   },
   data(){
     return{
-      footerLink: '../onze-aanpak'
+      footerLink: '../onze-aanpak',
+      show: true,
     }
   },
   async asyncData ({ $content }) {
@@ -49,12 +61,21 @@ body{
   background-color: var(--oxford);
 }
 
+.modal{
+  padding: 0!important;
+}
+
+
+.modal-extra-content{
+  width: 100%;
+}
+
 .footer{
   background-color: var(--indigo);
 }
 
 .footer p{
-  color: var(--timberwolf);
+  color: white;
 }
 
 .social-logo{
@@ -70,7 +91,7 @@ body{
 }
 
 .progress-bar{
-  background-color: var(--timberwolf);
+  background-color: white;
 }
 
 .menu-btn-holder{
@@ -82,11 +103,11 @@ body{
 }
 
 .footer-nav-item rect{
-  fill: var(--timberwolf)!important;
+  fill: white!important;
 }
 
 .footer-nav-item path{
-  fill: var(--timberwolf)!important;
+  fill: white!important;
 }
 
 .menu-btn-holder:hover{
@@ -109,6 +130,29 @@ body{
 #menu-overlay-contact p{
   color: var(--timberwolf);
 }
+
+.section-fix{
+  opacity: 1;
+}
+
+@media only screen and (max-width: 576px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 991px) {
+  .section-fix{
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+
+}
+
 
 
 </style>

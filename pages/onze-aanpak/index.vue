@@ -8,7 +8,7 @@
       </div>
     </section>
 
-    <NextPage v-if="footerLink" :footerLink="footerLink"></NextPage>
+    <!--<NextPage v-if="footerLink" :footerLink="footerLink"></NextPage>-->
     <Footer></Footer>
 
   </div>

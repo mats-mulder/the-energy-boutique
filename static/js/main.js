@@ -25,4 +25,21 @@ function closeMenu(){
 
 }
 
+function fixSectionTitle(element){
+  element.forEach(function (el){
+    let parent = document.getElementsByClassName(el)[0]
+    parent.innerHTML = parent.innerHTML.replace(/<p>/g, '<h1>').replace(/<\/p>/g, '</h1>');
+    parent = parent.getElementsByTagName('h1')[0]
+    parent.innerHTML = parent.innerHTML.replace(/<em>/g, '<i>').replace(/<\/em>/g, '</i>');
+  })
+}
+
+
+function closeExtraContent(element){
+  let name = element.parentNode.parentNode.parentNode.id
+  gsap.to('.modal',{marginLeft: '100vw', onComplete: function (){
+      $('#'+name).modal('toggle')
+  }})
+}
+
 

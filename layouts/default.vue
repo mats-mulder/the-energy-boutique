@@ -77,7 +77,7 @@ body{
 }
 
 :root {
-  --curry: #DCAC00;
+  --curry: #CEA018;
   --oxford: #031D44;
   --indigo: #253E63;
   --timberwolf: #DED9D3;
@@ -87,34 +87,59 @@ body{
 
 h1{
   font-family: 'Arapey', serif;
-  font-size: 8vh;
+  font-size: 9vh;
   color: white;
+  line-height: 100%;
+}
+
+h2{
+  font-family: 'Arapey', serif;
+  font-size: 6vh;
+}
+
+h3{
+  font-family: 'Arapey', serif;
+  font-size: 4vh;
+  color: white;
+  line-height: 100%;
 }
 
 h4{
   font-family: 'Lora', serif;
-  font-weight: bold;
+  font-weight: 600;
   color: white;
-  font-size: 1.2rem;
+  font-size: 2.2vh;
 }
 
 h5{
   font-family: 'Lora', serif;
-  font-weight: bold;
+  font-weight: 600;
   color: white;
-  font-size: 1.1rem;
+  font-size: 2.2vh;
 }
 
 p{
-  font-family: 'Lora', serif;
+  font-family: 'Lato', serif;
   color: white;
+  font-size: 1.8vh;
 }
 
+.extra-content-link{
+  font-family: 'Lato', serif;
+  font-weight: 700;
+  color: white;
+  font-size: 1.8vh;
+  text-decoration: underline;
+}
+
+.extra-content-link:hover{
+  cursor: pointer;
+}
 
 .menu-holder{
   position: fixed;
   width: 100%;
-  z-index: 500;
+  z-index: 147;
 }
 
 .menu-btn-holder{
@@ -214,16 +239,12 @@ p{
 
 .section-fix{
   min-height: 100vh;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
   padding: 0;
-  opacity: 0;
 }
 
 i{
   text-decoration: underline var(--curry);
-  text-decoration-thickness: 7px;
+  text-decoration-thickness: 0.5vh;
 }
 
 .page-text{
@@ -232,7 +253,25 @@ i{
 
 
 
+@media only screen and (max-width: 576px) {
+  h1{
+    font-size: 7vh;
+  }
+}
 
+@media only screen and (max-width: 767px) {
 
+}
+
+@media only screen and (max-width: 991px) {
+}
+
+@media only screen and (max-width: 1199px) {
+
+}
+
+.modal-backdrop {
+  background-color: transparent;
+}
 
 </style>

@@ -1,7 +1,74 @@
+function checkViewport(){
+  const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+  return vw >= 992;
+}
+
+function toggleGsap(toggle){
+  ScrollTrigger.getAll().forEach(function (trigger){
+    if(toggle === 'disable'){
+      trigger.disable()
+    }
+    else if(toggle === 'enable'){
+      trigger.enable()
+    }
+  })
+}
+
+
+function newGsap(){
+
+  // QUOTE PAGE
+  document.getElementsByClassName('component-quote').forEach(function (section){
+    let parent = section.parentNode
+    let quoteText = section.getElementsByClassName('quote-text')
+    let quoteAuthor = section.getElementsByClassName('quote-author')
+    let tl = gsap.timeline()
+    tl.set([quoteText, quoteAuthor],{opacity: 0})
+    tl.to([quoteText, quoteAuthor],{opacity:1, duration: 2})
+    tl.to([quoteText, quoteAuthor],{opacity:0, duration: 2},6)
+    ScrollTrigger.create({
+      trigger: parent,
+      start: "top top",
+      end: "bottom 40%",
+      scrub: true,
+      animation: tl,
+    })
+  })
+
+  // CONTENT RIGHT
+  document.getElementsByClassName('component-content-right').forEach(function (section){
+    let parent = section.parentNode
+    let imageHolder = section.getElementsByClassName('fixed-image-holder')
+    let image = section.getElementsByClassName('fixed-image')
+    let text = section.getElementsByClassName('section-text')
+    let titleTop = section.getElementsByClassName('page-title-top')
+    let titleBottom = section.getElementsByClassName('page-title-bottom')
+    let tl = gsap.timeline()
+    tl.set([imageHolder, text, titleTop, titleBottom],{opacity:0})
+    tl.set([imageHolder],{marginLeft: '5vh', duration: 3},0)
+    tl.to([imageHolder, titleTop, titleBottom],{opacity: 1, duration: 3},0)
+    tl.to([imageHolder],{marginLeft: '0', duration: 3},0)
+    tl.to([image],{marginLeft: '-50%', duration: 15},0)
+    tl.to([titleTop],{marginLeft: '-10%', duration: 15},0)
+    tl.to([titleBottom],{marginRight: '-10%', duration: 15},0)
+    tl.to([text],{opacity: 1, duration: 2},2)
+    tl.to([imageHolder, text, titleTop, titleBottom],{opacity: 0, duration: 3},12)
+    tl.to([imageHolder],{marginLeft: '-5vh', duration: 3},12)
+    ScrollTrigger.create({
+      trigger: parent,
+      start: "top 7%",
+      end: "bottom 50%",
+      pin: imageHolder,
+      scrub: true,
+      animation: tl,
+    })
+  })
+
+}
+
+
 // Init gsap animations of page
 function initGsap(){
-  gsap.registerPlugin(ScrollTrigger);
-
   document.getElementsByTagName('section').forEach(function (el){
     let fix = el.getElementsByClassName('section-fix')[0]
     let page_title_top = el.getElementsByClassName('page-title-top')[0]
@@ -11,7 +78,7 @@ function initGsap(){
     let text = el.getElementsByClassName('page-text')[0]
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: el,
+        trigger: image_holder,
         start: "top top",
         end: "bottom top",
         pin: image_holder,
