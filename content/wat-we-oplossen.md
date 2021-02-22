@@ -72,7 +72,7 @@ content:
       een gezond en gevarieerd voedingspatroon. \n\nRealistisch, praktisch, niets
       uitsluitend, passend in jouw persoonlijke leven en gewoon lekker. "
     extra_content_container:
-      active: true
+      active: false
       title: Voeding
       image: "/images/healthy-eating-ingredients-1200x628-facebook-1200x628.jpg"
       content:
