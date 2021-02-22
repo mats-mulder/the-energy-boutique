@@ -13,10 +13,16 @@ content:
     ontspanning.
   content:
   - title: Beweging
-    content-block: Ons lichaam is gemaakt om te bewegen en actief bezig te zijn, zo
-      blijven we sterk en soepel. Het is wel belangrijk om het lichaam op de juiste
-      manier te trainen en te bewegen. Wij maken een bewegingsprogramma dat realistisch
-      is, bij jouw persoonlijke situatie past en voor positieve veranderingen zorgt.
+    content-block: "Ons lichaam is gemaakt om te bewegen en actief bezig te zijn,
+      zo blijven we sterk en soepel. Bij The Energy Boutique helpen wij je met een
+      programma dat ervoor zorgt dat jij je sterker, fitter en energieker voelt. \n\nWe
+      maken een bewegingsprogramma dat realistisch is, bij jouw persoonlijke levensstijl
+      past en voor positieve veranderingen zorgt. \n\nHet is belangrijk om het lichaam
+      op de juiste manier te trainen en te bewegen. Een verkeerde houding of beweegpatroon
+      kan een negatieve invloed hebben en voor disbalans zorgen in het lichaam wat
+      vervolgens kan leiden tot pijnklachten. Dit zorgt er dan vaak voor dat je minder
+      gaat bewegen. \n\nWaar letten we op en hoe komt jouw bewegingsprogramma tot
+      stand?"
     extra_content_container:
       active: true
       title: Test Movement
