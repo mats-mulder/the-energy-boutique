@@ -1,9 +1,6 @@
 ---
 page_title: Wat we oplossen
 content:
-- template: page
-  quote: Dit is een aansprekende quote
-  author: Mats Mulder
 - template: content-right
   title:
     top: "<p>Een <em>holistische</em> aanpak</p>"
@@ -118,10 +115,13 @@ content:
         description: ''
         button: ''
   image: "/images/duinen.jpg"
+- template: page
+  quote: Dit is een aansprekende quote
+  author: Mats Mulder
 - template: content-right
   title:
     top: "<p>Een <em>holistische</em> aanpak</p>"
-    bottom: "<p>gericht op de <em>lange</em> termijn?</p>"
+    bottom: "<p>gericht op de <em>lange</em> termijn</p>"
   introduction: The Energy Boutique gelooft in een holistisch aanpak. Met een op maat
     gemaakt leefstijlprogramma vinden we een juiste balans in beweging, voeding en
     ontspanning.
