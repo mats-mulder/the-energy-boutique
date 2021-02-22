@@ -1,23 +1,28 @@
 <template>
   <div class="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" :id="content.title + '-modal'">
     <div class="modal-extra-content">
+      <!--
       <div class="header-image-holder">
-        <div onclick="closeExtraContent(this)" class="round-btn">
-          <img class="img-fluid" src="/assets/large_arrow_left.png">
-        </div>
+
         <img class="img-fluid header-image" :src="content.image">
       </div>
-      <div class="container extra-content-title">
-        <h1>{{ content.title }}</h1>
+    -->
+      <div onclick="closeExtraContent(this)" class="round-btn">
+        <img class="img-fluid" src="/assets/large_arrow_left_white.png">
       </div>
       <div class="content-container">
         <div class="container">
           <div class="row">
             <div class="col-12">
+              <h1 class="extra-content-title">{{ content.title }}</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
               <div class="column-content">
                 <h5 class="mb-5">{{ content.content.introduction }}</h5>
 
-                <div class="mt-2" v-for="section in content.content.sections">
+                <div class="mt-4" v-for="section in content.content.sections">
                   <h4>{{ section.title }}</h4>
                   <p>{{ section.content  }}</p>
                 </div>
@@ -28,33 +33,31 @@
         </div>
 
       </div>
-      <div class="quote-container">
+      <div class="quote-container" :style="'background-image: url('+ content.quote.image.toString() +')'">
         <div class="container">
-          <div class="row">
-            <div class="col-8">
+          <div class="row justify-content-center">
+            <div class="col-8 text-center">
               <h3 class="quote-text">{{ content.quote.quote }}</h3>
               <h4 class="mt-4">{{ content.quote.author }}</h4>
             </div>
-
           </div>
-
         </div>
       </div>
 
       <div class="action-container">
         <div class="container">
-          <div class="row text-center">
+          <div class="row">
             <div class="col-12">
               <h2>{{ content['call_to_action'].title }}</h2>
             </div>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-8 text-center">
+          <div class="row">
+            <div class="col-8">
               <h5 class="mt-2">{{ content['call_to_action'].description }}.</h5>
             </div>
           </div>
           <div class="row mt-4">
-            <div class="col-12 text-center">
+            <div class="col-12">
               <button type="button" class="btn btn-primary">{{ content['call_to_action'].button }}</button>
             </div>
           </div>
@@ -77,8 +80,14 @@ export default {
 
 <style scoped>
 
+h1{
+  font-size: 10vh;
+  text-decoration: underline var(--curry) 6px;
+  margin-bottom: 5vh;
+}
+
 .header-image-holder{
-  height: 35vh;
+  height: 20vh;
   overflow: hidden;
   width: 100%;
   background-color: var(--oxford);
@@ -86,18 +95,14 @@ export default {
 
 .header-image{
   opacity: 0;
+  width: 100%;
 }
 
-.extra-content-title{
-  margin-top: 10vh;
-}
 
 .content-container{
   background-color: var(--oxford);
-  margin-top: -5vh;
-  padding-top: 7vh;
-  padding-bottom: 10vh;
-  min-height: 50vh;
+  min-height: 100vh;
+  padding-top: 25vh;
 }
 
 .content-container .container{
@@ -110,7 +115,7 @@ export default {
   top: 1.5vh;
   height: 5vh;
   width: 5vh;
-  background-color: var(--timberwolf);
+  background-color: var(--indigo);
   border-radius: 10vh;
   padding: 1vh;
   transition: 200ms;
@@ -141,10 +146,10 @@ p{
 }
 
 .quote-container{
-  padding-top: 60vh;
-  padding-bottom: 20vh;
-  background-image: url("/images/duinen.jpg");
+  padding-top: 40vh;
+  padding-bottom: 40vh;
   background-size: cover;
+  min-height: 100vh;
 }
 
 .quote-text:before{
@@ -171,16 +176,16 @@ p{
 .action-container{
   padding-top: 10vh;
   padding-bottom: 10vh;
-  background-color: var(--timberwolf);
-  color: var(--brown);
+  background-color: var(--oxford);
+  color: var(--white);
 }
 
 .action-container h5{
-  color: var(--brown);
+  color: white;
 }
 
 .btn-primary{
-  background-color: var(--oxford);
+  background-color: var(--curry);
   font-family: Lora;
   font-weight: bold;
   border-radius: 10vh;

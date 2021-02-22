@@ -23,27 +23,19 @@ import Footer from "@/components/Footer";
 export default {
   components: {QuotePage, LargeImage, ContentRight, Footer},
   mounted() {
-    document.addEventListener('DOMContentLoaded', (event) => {
-      initGsap()
-    })
+    if(checkViewport()){
+      newGsap()
+    }
+  },
+  data(){
+    return{
+      footerLink: '../contact',
+    }
   },
   async asyncData ({ $content }) {
     const content = await $content('onze-aanpak').fetch()
     return {
       content
-    }
-  },
-  data(){
-    return{
-      footerLink: '../contact'
-    }
-  },
-  transition: {
-    leave(el, done) {
-      let timeline = gsap.timeline({
-
-      });
-      timeline.to('#page-holder',{opacity:0})
     }
   }
 }

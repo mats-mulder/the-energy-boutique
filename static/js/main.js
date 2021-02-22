@@ -36,13 +36,12 @@ function fixSectionTitle(element){
 
 
 function closeExtraContent(element){
-  let name = element.parentNode.parentNode.parentNode.id
+  let name = element.parentNode.parentNode.id
   let tl = gsap.timeline({onComplete: function (){
       $('#'+name).modal('toggle')
     }})
   tl.to('.column-content',{opacity:0, paddingTop: '-2vh'},0)
-  tl.to('.extra-content-title',{opacity:0, paddingTop:'-2vh'},0.1)
-  tl.to('.header-image',{opacity: 0, marginTop: '-5vh'},0.2)
+  tl.to('.extra-content-title',{opacity:0, marginTop:'-5vh'},0.1)
   tl.to('.modal',{opacity: 0},0.4)
   tl.to('.fixed-image-holder',{marginLeft:'0', duration: 0.5},0.4)
   tl.to('.section-text',{left:'0', duration: 0.5},0.4)

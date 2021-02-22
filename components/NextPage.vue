@@ -25,8 +25,8 @@ export default {
     const next_tl = gsap.timeline({
       scrollTrigger: {
         trigger: '#next-page-outer',
-        start: 'top 90%',
-        end: 'top 50%',
+        start: 'top 50%',
+        end: 'top 20%',
         scrub: true,
         onLeave: function (){
           window.location = link
@@ -34,7 +34,7 @@ export default {
       }
     })
     next_tl.to('#next-page-outer', {opacity:1, duration:1},0)
-    next_tl.to('#next-page-outer', {width:'85px', height:'85px', duration:5, marginTop:'75vh'},0.5)
+    next_tl.to('#next-page-outer', {width:'85px', height:'85px', duration:5, marginTop: '5%'},0.5)
     next_tl.to('#next-page-outer', {backgroundColor: '#DCAC00', duration:0.75},4)
   }
 }
@@ -45,7 +45,8 @@ export default {
 .next-page{
   height: 70vh;
   margin: 0 auto;
-  margin-top: 75vh;
+  z-index: 200;
+  position: relative;
 }
 
 #next-page-outer{

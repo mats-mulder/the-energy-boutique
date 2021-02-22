@@ -1,8 +1,6 @@
 <template>
   <div>
 
-
-
     <transition-group name="fade">
       <section v-if="show"  v-for="(section, index) in content.content" :key="index" :id="index">
         <div class="section-fix">
@@ -13,9 +11,8 @@
     </transition-group>
 
 
-    <!--
     <NextPage v-if="footerLink" :footerLink="footerLink"></NextPage>
-  -->
+
 
     <Footer></Footer>
 

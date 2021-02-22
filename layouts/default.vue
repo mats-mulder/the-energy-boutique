@@ -77,7 +77,7 @@ body{
 }
 
 :root {
-  --curry: #CEA018;
+  --curry: #FEC601;
   --oxford: #031D44;
   --indigo: #253E63;
   --timberwolf: #DED9D3;
@@ -99,7 +99,7 @@ h2{
 
 h3{
   font-family: 'Arapey', serif;
-  font-size: 4vh;
+  font-size: 5vh;
   color: white;
   line-height: 100%;
 }
@@ -129,11 +129,11 @@ p{
   font-weight: 700;
   color: white;
   font-size: 1.8vh;
-  text-decoration: underline;
 }
 
 .extra-content-link:hover{
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .menu-holder{

@@ -19,7 +19,7 @@
 
         <div class="mt-5" v-for="item in content.content">
           <h4>{{ item.title }}</h4>
-          <p>{{item['content-block']}}<span style="margin-left: 10px" v-if="item['extra_content_container'].active === true" @click="openExtraContent(item['extra_content_container'].title + '-modal')" class="extra-content-link" >Meer Informatie →</span></p>
+          <p>{{item['content-block']}}<span style="margin-left: 10px" v-if="item['extra_content_container'].active === true" @click="openExtraContent(item['extra_content_container'].title + '-modal')" class="extra-content-link" >Lees verder →</span></p>
           <ExtraContentContainer v-if="item['extra_content_container'].active === true" :content="item['extra_content_container']"></ExtraContentContainer>
         </div>
       </div>
@@ -48,16 +48,15 @@ export default {
       let model = document.getElementById(name)
       let tl = gsap.timeline()
       tl.set(model,{opacity:0})
-      tl.set('.header-image',{opacity:'0', marginTop:'-5vh'})
-      tl.set(['.column-content','.extra-content-title'],{opacity:'0', paddingTop: '-2vh'})
+      tl.set(['.extra-content-title'],{opacity:'0', marginTop: '0'})
+      tl.set(['.column-content'],{opacity:'0'})
       tl.to('.fixed-image-holder',{marginLeft:'-100%', duration: 0.5},0)
       tl.to('.section-text',{left:'100%', duration: 0.5},0)
       tl.to('.page-title-top',{marginLeft:'-150%', opacity: 0, duration: 0.5},0)
       tl.to('.page-title-bottom',{marginLeft:'150%', opacity: 0, duration: 0.5},0)
       tl.to(model,{opacity:1},0.4)
-      tl.to('.header-image',{opacity: 1, marginTop: '0'},0.5)
-      tl.to('.extra-content-title',{opacity:1, paddingTop:0},0.6)
-      tl.to('.column-content',{opacity:1, paddingTop:0},0.7)
+      tl.to('.extra-content-title',{opacity:1, marginTop: '5vh'},0.5)
+      tl.to('.column-content',{opacity:1},0.8)
       $('#'+name).modal('toggle')
     }
   }
