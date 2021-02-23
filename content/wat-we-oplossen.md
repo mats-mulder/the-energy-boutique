@@ -2,8 +2,7 @@
 page_title: Wat we oplossen
 content:
 - template: page
-  quote: 'Sinds ik bij de Energy Boutique kom zit ik beter in mijn vel, wel lichamelijk
-    en geestelijk. '
+  quote: Sinds ik bij de Energy Boutique kom zit ik beter in mijn vel
   author: Helen
 - template: content-right
   title:
