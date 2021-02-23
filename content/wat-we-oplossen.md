@@ -2,8 +2,9 @@
 page_title: Wat we oplossen
 content:
 - template: page
-  quote: Dit is een aansprekende quote
-  author: Mats Mulder
+  quote: 'Sinds ik bij de Energy Boutique kom zit ik beter in mijn vel, wel lichamelijk
+    en geestelijk. '
+  author: Helen
 - template: content-right
   title:
     top: "<p>Een <em>holistische</em> aanpak</p>"
