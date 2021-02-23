@@ -6,8 +6,8 @@ content:
   author: Mats Mulder
 - template: content-right
   title:
-    top: "<p>Meer <em>energie </em>en balans</p>"
-    bottom: "<p>in een <em>druk </em>leven</p>"
+    top: "<p>Meer <em>energie </em>en</p>"
+    bottom: "<p><em>balans </em>in een druk leven</p>"
   introduction: 'Je wil je energieker en fitter voelen. Je bent op zoek naar meer
     balans in je leven. Maar wat altijd heeft gewerkt, werkt niet meer. Er is iets
     anders nodig. '
