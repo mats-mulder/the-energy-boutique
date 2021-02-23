@@ -3,7 +3,7 @@ page_title: Wat we oplossen
 content:
 - template: page
   quote: Sinds ik bij de Energy Boutique kom zit ik beter in mijn vel
-  author: Helen
+  author: Mats Mulder
 - template: content-right
   title:
     top: "<p>Een <em>holistische</em> aanpak</p>"
