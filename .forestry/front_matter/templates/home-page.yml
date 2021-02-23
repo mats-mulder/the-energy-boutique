@@ -31,3 +31,5 @@ fields:
   config:
     required: false
   label: Button text
+pages:
+- content/home.md
