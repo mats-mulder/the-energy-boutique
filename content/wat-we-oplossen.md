@@ -48,6 +48,6 @@ content:
         title: ''
         description: ''
         button: ''
-  image: "/images/de-an-sun-udrkox4gswm-unsplash.jpg"
+  image: "/images/mitchell-orr-gzaycfvq-hu-unsplash.jpg"
 
 ---
