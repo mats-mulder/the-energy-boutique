@@ -48,6 +48,6 @@ content:
         title: ''
         description: ''
         button: ''
-  image: "/images/clique-images-hsb2hmjyato-unsplash.jpg"
+  image: "/images/jakub-kriz-3ffedm8toek-unsplash.jpg"
 
 ---
