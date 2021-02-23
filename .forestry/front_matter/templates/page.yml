@@ -1,7 +1,6 @@
 ---
-label: quote
+label: Quote
 hide_body: true
-display_field: Author
 fields:
 - name: quote
   type: text
