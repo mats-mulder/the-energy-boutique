@@ -7,7 +7,7 @@ fields:
   type: text
   config:
     required: true
-  label: Pagine Titel
+  label: Pagina Titel
 - name: content
   type: blocks
   label: content
