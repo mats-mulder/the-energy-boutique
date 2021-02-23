@@ -48,6 +48,6 @@ content:
         title: ''
         description: ''
         button: ''
-  image: "/images/jakub-kriz-3ffedm8toek-unsplash.jpg"
+  image: "/images/fil-mazzarino-vyotjkmsnkq-unsplash.jpg"
 
 ---
