@@ -60,6 +60,6 @@ slogan: Recharge your vitality
 image: "/images/back_image.jpg"
 introduction: De plek voor positieve en realistische begeleiding op je totale vitaliteit
   voor de lange termijn.
-button_text: Lees verder
+button_text: Hier werken we aan
 
 ---
