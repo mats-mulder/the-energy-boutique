@@ -1,9 +1,6 @@
 ---
 page_title: Onze aanpak
 content:
-- template: page
-  quote: Dit is een aansprekende quote
-  author: Mats Mulder
 - template: content-right
   title:
     top: "<p>Een <em>holistische</em> aanpak</p>"
@@ -103,5 +100,8 @@ content:
         description: ''
         button: ''
   image: "/images/duinen.jpg"
+- template: page
+  quote: Dit is een aansprekende quote
+  author: Mats Mulder
 
 ---
