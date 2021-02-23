@@ -48,6 +48,6 @@ content:
         title: ''
         description: ''
         button: ''
-  image: "/images/fil-mazzarino-vyotjkmsnkq-unsplash.jpg"
+  image: "/images/de-an-sun-udrkox4gswm-unsplash.jpg"
 
 ---
