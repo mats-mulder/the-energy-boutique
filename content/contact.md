@@ -8,7 +8,7 @@ content:
   introduction: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut \nenim ad minim veniam,
     quis nostrud exercitation ullamco laboris."
-  image: "/images/alex-perez-97nk3fih7xa-unsplash.jpg"
+  image: "/images/beachwalk.jpg"
   content:
   - title: 1.  Kennismakingsgesprek
     content-block: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
