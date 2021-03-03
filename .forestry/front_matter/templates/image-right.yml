@@ -1,4 +1,32 @@
 ---
 label: Image Right
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: field_group
+  config: {}
+  fields:
+  - name: top
+    type: text
+    config:
+      required: true
+    label: Top
+  - name: bottom
+    type: text
+    config:
+      required: true
+    label: Bottom
+  label: Title
+- name: gallery
+  type: image_gallery
+  config: {}
+  label: Gallery
+- name: introduction
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Introduction
