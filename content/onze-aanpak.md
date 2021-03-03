@@ -107,8 +107,27 @@ content:
   title:
     top: "<p><em>Samenwerkingen</em> tot een</p>"
     bottom: "<p>compleet <em>gezondheidscentrum</em></p>"
-  gallery: []
+  gallery:
+  - "/images/arek-adeoye-ljocgjs63sm-unsplash.jpg"
+  - "/images/clique-images-hsb2hmjyato-unsplash.jpg"
   introduction: ''
-  content: []
+  content:
+  - title: Fysiotherapie
+    extra_content_container:
+      active: false
+      title: ''
+      content:
+        introduction: ''
+        sections: []
+      quote:
+        quote: ''
+        author: ''
+        image: ''
+      call_to_action:
+        title: ''
+        description: ''
+        button: ''
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
 
 ---
