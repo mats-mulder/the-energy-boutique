@@ -8,7 +8,8 @@ content:
   gallery:
   - "/images/arek-adeoye-ljocgjs63sm-unsplash.jpg"
   - "/images/clique-images-hsb2hmjyato-unsplash.jpg"
-  introduction: ''
+  introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor sed do eiusmod tempor.
   content:
   - title: Fysiotherapie
     extra_content_container:
