@@ -30,3 +30,38 @@ fields:
     schema:
       format: markdown
   label: Introduction
+- name: content
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+  - name: content
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Content
+  - name: extra_content_container
+    type: field_group
+    config: {}
+    fields:
+    - name: active
+      type: boolean
+      label: Active
+    - name: extra_content
+      type: include
+      config: {}
+      template: extra-content-container
+      label: Extra content
+    label: Extra Content Container
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Content
