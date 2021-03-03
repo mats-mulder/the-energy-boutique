@@ -7,14 +7,22 @@ fields:
   config: {}
   fields:
   - name: top
-    type: text
+    type: textarea
+    default: ''
     config:
       required: true
+      wysiwyg: true
+      schema:
+        format: html-blocks
     label: Top
   - name: bottom
-    type: text
+    type: textarea
+    default: ''
     config:
       required: true
+      wysiwyg: true
+      schema:
+        format: html-blocks
     label: Bottom
   label: Title
 - name: gallery
