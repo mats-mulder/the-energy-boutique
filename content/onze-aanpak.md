@@ -103,5 +103,12 @@ content:
 - template: page
   quote: Dit is een aansprekende quote
   author: Mats Mulder
+- template: image-right
+  title:
+    top: "<p><em>Samenwerkingen</em> tot een</p>"
+    bottom: "<p>compleet <em>gezondheidscentrum</em></p>"
+  gallery: []
+  introduction: ''
+  content: []
 
 ---
