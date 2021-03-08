@@ -1,67 +1,6 @@
 ---
 page_title: Onze aanpak
 content:
-- template: image-right
-  title:
-    top: "<p><em>Samenwerkingen</em> tot een</p>"
-    bottom: "<p>compleet <em>gezondheidscentrum</em></p>"
-  gallery:
-  - "/images/arek-adeoye-ljocgjs63sm-unsplash.jpg"
-  - "/images/clique-images-hsb2hmjyato-unsplash.jpg"
-  introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor sed do eiusmod tempor.
-  content:
-  - title: Fysiotherapie
-    extra_content_container:
-      active: false
-      title: ''
-      content:
-        introduction: ''
-        sections: []
-      quote:
-        quote: ''
-        author: ''
-        image: ''
-      call_to_action:
-        title: ''
-        description: ''
-        button: ''
-    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-  - title: Pedicure
-    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua et dolore magna aliqua.
-    extra_content_container:
-      active: false
-      title: ''
-      content:
-        introduction: ''
-        sections: []
-      quote:
-        quote: ''
-        author: ''
-        image: ''
-      call_to_action:
-        title: ''
-        description: ''
-        button: ''
-  - title: Vitaliteitscoach
-    extra_content_container:
-      active: false
-      title: ''
-      content:
-        introduction: ''
-        sections: []
-      quote:
-        quote: ''
-        author: ''
-        image: ''
-      call_to_action:
-        title: ''
-        description: ''
-        button: ''
-    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore
 - template: content-right
   title:
     top: "<p>Een <em>holistische</em> aanpak</p>"
@@ -161,8 +100,71 @@ content:
         description: ''
         button: ''
   image: "/images/duinen.jpg"
+  small_image: false
 - template: page
-  quote: Dit is een aansprekende quote
-  author: Mats Mulder
+  quote: Nu, na de nodige lessen van Helen ben ik niet meer stijf en kan ik zelfs
+    op mijn 72e planken
+  author: Hans Bijloos
+- template: image-right
+  title:
+    top: "<p><em>Samenwerkingen</em> tot een</p>"
+    bottom: "<p>compleet <em>gezondheidscentrum</em></p>"
+  gallery:
+  - "/images/arek-adeoye-ljocgjs63sm-unsplash.jpg"
+  - "/images/clique-images-hsb2hmjyato-unsplash.jpg"
+  introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor sed do eiusmod tempor.
+  content:
+  - title: Fysiotherapie
+    extra_content_container:
+      active: false
+      title: ''
+      content:
+        introduction: ''
+        sections: []
+      quote:
+        quote: ''
+        author: ''
+        image: ''
+      call_to_action:
+        title: ''
+        description: ''
+        button: ''
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+  - title: Pedicure
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua et dolore magna aliqua.
+    extra_content_container:
+      active: false
+      title: ''
+      content:
+        introduction: ''
+        sections: []
+      quote:
+        quote: ''
+        author: ''
+        image: ''
+      call_to_action:
+        title: ''
+        description: ''
+        button: ''
+  - title: Vitaliteitscoach
+    extra_content_container:
+      active: false
+      title: ''
+      content:
+        introduction: ''
+        sections: []
+      quote:
+        quote: ''
+        author: ''
+        image: ''
+      call_to_action:
+        title: ''
+        description: ''
+        button: ''
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore
 
 ---
