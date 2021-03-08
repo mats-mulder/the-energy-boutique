@@ -43,8 +43,8 @@ content:
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
             ab illo inventore.
       quote:
-        quote: Dit is een quote
-        author: Mats Mulder
+        quote: A good laugh and a long sleep are the best cures in the doctor’s book
+        author: Irish Proverb
         image: "/images/beach.jpg"
       call_to_action:
         title: Een keer jouw situatie bespreken?
