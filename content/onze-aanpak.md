@@ -101,6 +101,72 @@ content:
         button: ''
   image: "/images/duinen.jpg"
   small_image: false
+- template: content-right
+  title:
+    top: "<p><em>Individuele</em> begeleiding</p>"
+    bottom: "<p>door <em>gecertificeerde</em> specialisten</p>"
+  introduction: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna.Ut enim ad minim veniam, quis nostrud
+    exercitation ullamco laboris nisi ut aliquip ex ea '
+  image: "/images/relief-08.jpg"
+  small_image: true
+  content:
+  - title: The BioMechanics Method®
+    extra_content_container:
+      active: false
+      title: ''
+      content:
+        introduction: ''
+        sections: []
+      quote:
+        quote: ''
+        author: ''
+        image: ''
+      call_to_action:
+        title: ''
+        description: ''
+        button: ''
+    content-block: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. '
+  - title: Stott Pilattes® methode
+    extra_content_container:
+      active: false
+      title: ''
+      content:
+        introduction: ''
+        sections: []
+      quote:
+        quote: ''
+        author: ''
+        image: ''
+      call_to_action:
+        title: ''
+        description: ''
+        button: ''
+    content-block: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam.
+  - title: Geaccrediteerd als gewichtsconsulent door BGN Nederland
+    extra_content_container:
+      active: false
+      title: ''
+      content:
+        introduction: ''
+        sections: []
+      quote:
+        quote: ''
+        author: ''
+        image: ''
+      call_to_action:
+        title: ''
+        description: ''
+        button: ''
+    content-block: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.
 - template: page
   quote: Nu, na de nodige lessen van Helen ben ik niet meer stijf en kan ik zelfs
     op mijn 72e planken
