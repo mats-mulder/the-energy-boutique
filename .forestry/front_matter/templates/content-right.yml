@@ -74,3 +74,6 @@ fields:
     max: 
     labelField: title
   label: Content
+- name: small_image
+  type: boolean
+  label: Small Image
