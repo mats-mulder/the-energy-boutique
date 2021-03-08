@@ -113,8 +113,8 @@ content:
   content:
   - title: The BioMechanics Method®
     extra_content_container:
-      active: false
-      title: ''
+      active: true
+      title: Gewoon iets
       content:
         introduction: ''
         sections: []
