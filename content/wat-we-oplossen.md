@@ -58,9 +58,10 @@ content:
         author: Mats Mulder
         image: "/images/duinen.jpg"
       call_to_action:
-        title: ''
-        description: ''
-        button: ''
+        title: Een keer jouw situatie bespreken?
+        description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam..
+        button: Plan een kennismaking
   - title: Persoonlijke aanpak
     content-block: 'Deze unieke persoonlijke aanpak is volledig op jou afgestemd zodat
       je echt stappen maakt. '
