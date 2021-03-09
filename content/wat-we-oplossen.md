@@ -18,8 +18,8 @@ content:
       voeding en coaching. Samen kijken we hoe je een gebalanceerde, actieve en gezonde
       leefstijl praktisch kan toepassen in je dagelijkse leven.
     extra_content_container:
-      active: false
-      title: ''
+      active: true
+      title: werkt!
       content:
         introduction: ''
         sections: []
@@ -49,5 +49,6 @@ content:
         description: ''
         button: ''
   image: "/images/mitchell-orr-gzaycfvq-hu-unsplash.jpg"
+  small_image: false
 
 ---
