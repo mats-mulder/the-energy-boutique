@@ -47,9 +47,10 @@ content:
         author: Maxime Lagacé
         image: "/images/beachwalk.jpg"
       call_to_action:
-        title: ''
-        description: ''
-        button: ''
+        title: Een keer jouw situatie bespreken?
+        description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam..
+        button: Plan een kennismaking
   - title: 2. Persoonlijk plan
     content-block: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
       eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
