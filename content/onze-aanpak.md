@@ -183,8 +183,8 @@ content:
   content:
   - title: Fysiotherapie
     extra_content_container:
-      active: false
-      title: ''
+      active: true
+      title: Werkt!
       content:
         introduction: ''
         sections: []
