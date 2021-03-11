@@ -170,9 +170,12 @@ content:
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
       consequat.
 - template: page
-  quote: Nu, na de nodige lessen van Helen ben ik niet meer stijf en kan ik zelfs
-    op mijn 72e planken
-  author: Hans Bijloos
+  quote: Bij The Energy Boutique hebben ze me geholpen om inzicht te krijgen in wat
+    de reden voor mij was om aan mijn gezondheid te werken en hoeveel invloed ik hier
+    zelf op heb. Een persoonlijke programma met een combinatie van bewegen, voeding
+    en coaching heeft gezorgd voor een blijvende verandering en ik zit echt zo veel
+    beter in mijn vel
+  author: ''
 - template: image-right
   title:
     top: "<p><em>Samenwerkingen</em> tot een</p>"
