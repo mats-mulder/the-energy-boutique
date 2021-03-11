@@ -8,8 +8,11 @@ content:
   title:
     top: "<p>Meer <em>energie</em> en <em>balans</em></p>"
     bottom: "<p>in een druk leven</p>"
-  gallery: []
-  introduction: ''
+  gallery:
+  - "/images/duinen.jpg"
+  introduction: Je wil je energieker en fitter voelen. Je bent op zoek naar meer balans
+    in je leven. Maar wat altijd heeft gewerkt, werkt niet meer. Er is iets anders
+    nodig.
   content: []
 - template: content-right
   title:
