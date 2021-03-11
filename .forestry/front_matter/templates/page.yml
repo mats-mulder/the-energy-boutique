@@ -10,5 +10,5 @@ fields:
 - name: author
   type: text
   config:
-    required: true
+    required: false
   label: Author
