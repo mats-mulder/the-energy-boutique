@@ -181,12 +181,11 @@ content:
     top: "<p><em>Samenwerkingen</em> tot een</p>"
     bottom: "<p>compleet <em>gezondheidscentrum</em></p>"
   gallery:
-  - "/images/arek-adeoye-ljocgjs63sm-unsplash.jpg"
-  - "/images/clique-images-hsb2hmjyato-unsplash.jpg"
+  - "/images/pilates-noord-studio-63-1-2.jpg"
   introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor sed do eiusmod tempor.
   content:
-  - title: Fysiotherapie
+  - title: Onderhanden Fysiotherapie
     extra_content_container:
       active: true
       title: Werkt!
@@ -203,7 +202,7 @@ content:
         button: ''
     content: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
-  - title: Pedicure
+  - title: Pedicure Benoordenhout
     content: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua et dolore magna aliqua.
     extra_content_container:
@@ -220,7 +219,7 @@ content:
         title: ''
         description: ''
         button: ''
-  - title: Vitaliteitscoach
+  - title: Feel & Heal massage
     extra_content_container:
       active: false
       title: ''
