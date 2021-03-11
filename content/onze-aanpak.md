@@ -11,9 +11,10 @@ content:
   content:
   - title: Beweging
     content-block: Ons lichaam is gemaakt om te bewegen en actief bezig te zijn, zo
-      blijven we sterk en soepel. Het is wel belangrijk om het lichaam op de juiste
-      manier te trainen en te bewegen. Wij maken een bewegingsprogramma dat realistisch
-      is, bij jouw persoonlijke situatie past en voor positieve veranderingen zorgt.
+      blijven we sterk en soepel. Het is wel belangrijk om je lichaam op de juiste
+      manier te trainen. Een verkeerde houding of beweegpatroon kan tot disbalans
+      en pijnklachten in lichaam leiden. Onze personal trainer maakt gebruik van verschillende
+      methodes die voor jouw beweegprogramma nodig zijn.
     extra_content_container:
       active: true
       title: Movement
@@ -99,7 +100,7 @@ content:
         title: ''
         description: ''
         button: ''
-  image: "/images/duinen.jpg"
+  image: "/images/photographyastherapy14-2.jpg"
   small_image: false
 - template: content-right
   title:
