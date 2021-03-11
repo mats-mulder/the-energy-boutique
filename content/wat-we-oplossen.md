@@ -4,6 +4,13 @@ content:
 - template: page
   quote: Een gezonde leefstijl is belangrijk dan ooit... Zorg jij goed voor jezelf?
   author: ''
+- template: image-right
+  title:
+    top: "<p>Meer <em>energie</em> en <em>balans</em></p>"
+    bottom: "<p>in een druk leven</p>"
+  gallery: []
+  introduction: ''
+  content: []
 - template: content-right
   title:
     top: "<p>Meer <em>energie</em> en <em>balans</em></p>"
