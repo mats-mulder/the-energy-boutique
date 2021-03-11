@@ -1,6 +1,9 @@
 ---
 page_title: Aan de slag
 content:
+- template: page
+  author: Laura Annabelle
+  quote: If the plan doesn’t work, change the plan but never the goal
 - template: content-right
   title:
     top: "<p><em>Jouw situatie</em> bespreken?</p>"
