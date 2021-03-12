@@ -102,5 +102,12 @@ content:
       eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam. '
   small_image: false
+- template: image-right
+  title:
+    top: "<p>Heeft u nog andere <em>vragen</em>?</p>"
+    bottom: "<p>U kunt ons <em>altijd</em> bereiken via</p>"
+  gallery: []
+  introduction: ''
+  content: []
 
 ---
