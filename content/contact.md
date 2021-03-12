@@ -159,9 +159,6 @@ content:
         title: ''
         description: ''
         button: ''
-    content: |-
-      KVK: 74508776
-      BTW: NL002155844B96
-      Privacy Verklaring
+    content: "<p>KVK: 74508776<br>BTW: NL002155844B96 <br>Privacy Verklaring</p>"
 
 ---
