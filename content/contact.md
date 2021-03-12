@@ -113,10 +113,7 @@ content:
     nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
   content:
   - title: Contactgegevens
-    content: |-
-      Helen Essers
-      info@theenergyboutique.nl
-      06 242 049 13
+    content: "<p>Helen Essers<br>info@theenergyboutique.nl<br>06 242 049 13</p>"
     extra_content_container:
       active: false
       title: ''
