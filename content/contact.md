@@ -55,9 +55,9 @@ content:
           accusantium doloremque laudantium, totam rem aperiam..
         button: Plan een kennismaking
   - title: Een plan op maat
-    content-block: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam. '
+    content-block: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam.</p>"
     extra_content_container:
       active: false
       title: ''
@@ -98,9 +98,9 @@ content:
         title: Hoe kunnen we jou helpen?
         description: Laten we in gesprek gaan
         button: Neem contact op
-    content-block: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam. '
+    content-block: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam.</p>"
   small_image: false
 - template: image-right
   title:
