@@ -11,7 +11,7 @@ content:
   introduction: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut \nenim ad minim veniam,
     quis nostrud exercitation ullamco laboris."
-  image: "/images/beachwalk.jpg"
+  image: "/images/image-2.jpg"
   content:
   - title: 1.  Kennismakingsgesprek
     content-block: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
