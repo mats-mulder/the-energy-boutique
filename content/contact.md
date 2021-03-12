@@ -95,9 +95,9 @@ content:
           the more he wants. Instead of filling a vacuum, it makes one.
         author: Benjamin Franklin
       call_to_action:
-        title: ''
-        description: ''
-        button: ''
+        title: Hoe kunnen we jou helpen?
+        description: Laten we in gesprek gaan
+        button: Neem contact op
     content-block: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
       eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam. '
