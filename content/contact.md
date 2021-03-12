@@ -13,12 +13,12 @@ content:
     anders te doen? Om vervolgens weer in je oude patronen te vallen?
   image: "/images/clique-images-hsb2hmjyato-unsplash.jpg"
   content:
-  - title: 1.  Kennismakingsgesprek
+  - title: Intake gesprek
     content-block: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
       eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation.
     extra_content_container:
-      active: true
+      active: false
       title: Test extra content brown
       content:
         introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -54,7 +54,7 @@ content:
         description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam..
         button: Plan een kennismaking
-  - title: 2. Persoonlijk plan
+  - title: Een plan op maat
     content-block: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
       eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam. '
@@ -72,6 +72,35 @@ content:
         title: ''
         description: ''
         button: ''
+  - title: Kosten
+    extra_content_container:
+      active: true
+      title: Onze prijzen
+      content:
+        introduction: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam. '
+        sections:
+        - title: Ipsum
+          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam. '
+        - title: Lorem
+          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam. '
+      quote:
+        image: "/images/jakub-kriz-3ffedm8toek-unsplash.jpg"
+        quote: Money never made a man happy yet, nor will it. The more a man has,
+          the more he wants. Instead of filling a vacuum, it makes one.
+        author: Benjamin Franklin
+      call_to_action:
+        title: ''
+        description: ''
+        button: ''
+    content-block: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam. '
   small_image: false
 
 ---
