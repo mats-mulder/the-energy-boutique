@@ -106,8 +106,68 @@ content:
   title:
     top: "<p>Heeft u nog andere <em>vragen</em>?</p>"
     bottom: "<p>U kunt ons <em>altijd</em> bereiken via</p>"
-  gallery: []
-  introduction: ''
-  content: []
+  gallery:
+  - "/images/thought-catalog-lny5riigq1s-unsplash.jpg"
+  introduction: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+  content:
+  - title: Contactgegevens
+    content: |-
+      Helen Essers
+      info@theenergyboutique.nl
+      06 242 049 13
+    extra_content_container:
+      active: false
+      title: ''
+      content:
+        introduction: ''
+        sections: []
+      quote:
+        quote: ''
+        author: ''
+        image: ''
+      call_to_action:
+        title: ''
+        description: ''
+        button: ''
+  - title: Adres
+    content: |-
+      Nirwana flat
+      Benoordenhoutseweg 227D
+      2597 BE Den Haag
+    extra_content_container:
+      active: false
+      title: ''
+      content:
+        introduction: ''
+        sections: []
+      quote:
+        quote: ''
+        author: ''
+        image: ''
+      call_to_action:
+        title: ''
+        description: ''
+        button: ''
+  - title: Bedrijgsgegevens
+    extra_content_container:
+      active: false
+      title: ''
+      content:
+        introduction: ''
+        sections: []
+      quote:
+        quote: ''
+        author: ''
+        image: ''
+      call_to_action:
+        title: ''
+        description: ''
+        button: ''
+    content: |-
+      KVK: 74508776
+      BTW: NL002155844B96
+      Privacy Verklaring
 
 ---
