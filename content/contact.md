@@ -129,10 +129,7 @@ content:
         description: ''
         button: ''
   - title: Adres
-    content: |-
-      Nirwana flat
-      Benoordenhoutseweg 227D
-      2597 BE Den Haag
+    content: "<p>Nirwana flat <br>Benoordenhoutseweg 227D<br>2597 BE Den Haag</p>"
     extra_content_container:
       active: false
       title: ''
