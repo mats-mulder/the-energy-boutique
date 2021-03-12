@@ -11,7 +11,7 @@ content:
   introduction: Wel eens begonnen aan een trainings programma, geprobeerd je eetpatroon
     te veranderen, jezelf voorgenomen om minder stress te hebben en vanaf nu alles
     anders te doen? Om vervolgens weer in je oude patronen te vallen?
-  image: "/images/image-2.jpg"
+  image: "/images/clique-images-hsb2hmjyato-unsplash.jpg"
   content:
   - title: 1.  Kennismakingsgesprek
     content-block: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
