@@ -14,9 +14,9 @@ content:
   image: "/images/clique-images-hsb2hmjyato-unsplash.jpg"
   content:
   - title: Intake gesprek
-    content-block: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation.
+    content-block: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation.</p>"
     extra_content_container:
       active: false
       title: Test extra content brown
