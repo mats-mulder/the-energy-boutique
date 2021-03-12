@@ -6,8 +6,8 @@ content:
   quote: If the plan doesn’t work, change the plan but never the goal
 - template: content-right
   title:
-    top: "<p>Hoe kunnen <em>wij</em></p>"
-    bottom: "<p><em>jou</em> helpen?</p>"
+    top: "<p>Het is <em>tijd</em></p>"
+    bottom: "<p>om <em>aan de slag</em> te gaan</p>"
   introduction: Wel eens begonnen aan een trainings programma, geprobeerd je eetpatroon
     te veranderen, jezelf voorgenomen om minder stress te hebben en vanaf nu alles
     anders te doen? Om vervolgens weer in je oude patronen te vallen?
