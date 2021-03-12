@@ -6,11 +6,11 @@ content:
   quote: If the plan doesn’t work, change the plan but never the goal
 - template: content-right
   title:
-    top: "<p><em>Jouw situatie</em> bespreken?</p>"
-    bottom: "<p>zo gaan wij te werk</p>"
-  introduction: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut \nenim ad minim veniam,
-    quis nostrud exercitation ullamco laboris."
+    top: "<p>Hoe kunnen <em>wij</em></p>"
+    bottom: "<p><em>jou</em> helpen?</p>"
+  introduction: Wel eens begonnen aan een trainings programma, geprobeerd je eetpatroon
+    te veranderen, jezelf voorgenomen om minder stress te hebben en vanaf nu alles
+    anders te doen? Om vervolgens weer in je oude patronen te vallen?
   image: "/images/image-2.jpg"
   content:
   - title: 1.  Kennismakingsgesprek
