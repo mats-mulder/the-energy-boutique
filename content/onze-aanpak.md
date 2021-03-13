@@ -10,11 +10,11 @@ content:
     ontspanning.
   content:
   - title: Beweging
-    content-block: Ons lichaam is gemaakt om te bewegen en actief bezig te zijn, zo
-      blijven we sterk en soepel. Het is wel belangrijk om je lichaam op de juiste
+    content-block: "<p>Ons lichaam is gemaakt om te bewegen en actief bezig te zijn,
+      zo blijven we sterk en soepel. Het is wel belangrijk om je lichaam op de juiste
       manier te trainen. Een verkeerde houding of beweegpatroon kan tot disbalans
       en pijnklachten in lichaam leiden. Onze personal trainer maakt gebruik van verschillende
-      methodes die voor jouw beweegprogramma nodig zijn.
+      methodes die voor jouw beweegprogramma nodig zijn.</p>"
     extra_content_container:
       active: true
       title: Movement
@@ -187,7 +187,7 @@ content:
   content:
   - title: Onderhanden Fysiotherapie
     extra_content_container:
-      active: true
+      active: false
       title: Werkt!
       content:
         introduction: ''
