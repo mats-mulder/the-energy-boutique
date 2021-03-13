@@ -14,10 +14,11 @@ content:
     in je leven. Maar wat altijd heeft gewerkt, werkt niet meer. Er is iets anders
     nodig.
   content:
-  - content: |-
-      Bij The Energy Boutique helpen we je om inzicht te krijgen in wat bij jou past en brengen we in kaart wat jij nodig hebt op het gebied van beweging, voeding en coaching. Samen kijken we hoe je een gebalanceerde, actieve en gezonde leefstijl praktisch kan toepassen in je dagelijkse leven.
-
-      Deze unieke persoonlijke aanpak is volledig op jou afgestemd zodat je echt stappen maakt.
+  - content: "<p>Bij The Energy Boutique helpen we je om inzicht te krijgen in wat
+      bij jou past en brengen we in kaart wat jij nodig hebt op het gebied van beweging,
+      voeding en coaching. Samen kijken we hoe je een gebalanceerde, actieve en gezonde
+      leefstijl praktisch kan toepassen in je dagelijkse leven. Deze unieke persoonlijke
+      aanpak is volledig op jou afgestemd zodat je echt stappen maakt.</p>"
     extra_content_container:
       active: false
       title: ''
