@@ -53,11 +53,11 @@ content:
           accusantium doloremque laudantium, totam rem aperiam.
         button: Plan een kennismaking
   - title: 'Voeding '
-    content-block: 'Het perfecte voedingspatroon bestaat niet! Het gaat erom dat je
-      een voedingspatroon vindt waar jij je goed bij voelt en past in jouw leven en
-      situatie. Onze voedingscoach helpt je om feiten van fabels te onderscheiden
+    content-block: "<p>Het perfecte voedingspatroon bestaat niet! Het gaat erom dat
+      je een voedingspatroon vindt waar jij je goed bij voelt en past in jouw leven
+      en situatie. Onze voedingscoach helpt je om feiten van fabels te onderscheiden
       en stelt een programma op maat samen. Realistisch, praktisch, niets uitsluitend,
-      passend in jouw persoonlijke leven en gewoon lekker.        '
+      passend in jouw persoonlijke leven en gewoon lekker.</p>"
     extra_content_container:
       active: true
       title: Voeding
@@ -82,10 +82,11 @@ content:
           accusantium doloremque laudantium, totam rem aperiam..
         button: Plan een kennismaking
   - title: Coaching
-    content-block: Voor een totale vitaliteit is naast een gezond lichaam, ook een
-      gezonde geest belangrijk. Meer focus en balans, beter met stress omgaan, bewustere
-      keuzes maken, meer regie over je eigen leven, acceptatie, grotere veerkracht
-      en meer positief en energiek in het leven staan is wat je met coaching kan bereiken!
+    content-block: "<p>Voor een totale vitaliteit is naast een gezond lichaam, ook
+      een gezonde geest belangrijk. Meer focus en balans, beter met stress omgaan,
+      bewustere keuzes maken, meer regie over je eigen leven, acceptatie, grotere
+      veerkracht en meer positief en energiek in het leven staan is wat je met coaching
+      kan bereiken!</p>"
     extra_content_container:
       active: false
       title: ''
