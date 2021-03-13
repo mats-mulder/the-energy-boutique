@@ -148,9 +148,9 @@ content:
         title: ''
         description: ''
         button: ''
-    content-block: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam.
+    content-block: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam.</p>"
   - title: Geaccrediteerd als gewichtsconsulent door BGN Nederland
     extra_content_container:
       active: false
@@ -166,10 +166,10 @@ content:
         title: ''
         description: ''
         button: ''
-    content-block: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+    content-block: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.
+      consequat.</p>"
 - template: page
   quote: Bij The Energy Boutique hebben ze me geholpen om inzicht te krijgen in wat
     de reden voor mij was om aan mijn gezondheid te werken en hoeveel invloed ik hier
