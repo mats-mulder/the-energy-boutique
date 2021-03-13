@@ -204,8 +204,8 @@ content:
     content: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>"
   - title: Pedicure Benoordenhout
-    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua et dolore magna aliqua.
+    content: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua et dolore magna aliqua.</p>"
     extra_content_container:
       active: false
       title: ''
@@ -235,7 +235,7 @@ content:
         title: ''
         description: ''
         button: ''
-    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore
+    content: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore</p>"
 
 ---
