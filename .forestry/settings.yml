@@ -5,6 +5,10 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: content/globall/menu.md
+  label: Menu
+  match: "**/*"
+- type: document
   path: tets
   label: test
 - type: heading
@@ -23,9 +27,6 @@ sections:
   label: Contact
 - type: heading
   label: Global Content
-- type: document
-  path: content/global/menu.md
-  label: Menu
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
