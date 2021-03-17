@@ -3,11 +3,18 @@ page_titles:
 - title: Home
   tags: []
 - title: Wat we oplossen
-  tags: []
+  tags:
+  - Ons vakgebied
 - title: Onze Aanpak
-  tags: []
+  tags:
+  - Visie
+  - Methodes
+  - Expertise
 - title: Contact
-  tags: []
+  tags:
+  - Contactgegevens
+  - Prijzen
+  - Contactformulier
 contact_information:
   title: The Energy Boutique
   personal_information: "<p>Helen Essers<br>info@theenergyboutique.nl<br>06 242 049
