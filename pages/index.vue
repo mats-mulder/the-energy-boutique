@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Menu :currentIndex="0"></Menu>
     <LoadingIcon></LoadingIcon>
     <div class="container-fluid" id="home-holder">
       <div class="row" id="home-company-text">
@@ -28,11 +29,12 @@ import ContentRight from "~/components/ContentRight";
 import LargeImage from "~/components/LargeImage";
 import QuotePage from "@/components/QuotePage";
 import LoadingIcon from "@/components/LoadingIcon";
+import Menu from "@/components/Menu";
 export default {
   head: {
     title: "Home - The Energy Boutique"
   },
-  components: {LoadingIcon, QuotePage, LargeImage, ContentRight, Footer},
+  components: {Menu, LoadingIcon, QuotePage, LargeImage, ContentRight, Footer},
   async asyncData ({ $content }) {
     const content = await $content('home').fetch()
     return {
