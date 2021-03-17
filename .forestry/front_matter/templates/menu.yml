@@ -17,5 +17,5 @@ fields:
   config:
     min: 4
     max: 4
-    labelField: 
+    labelField: title
   label: Page Titles
