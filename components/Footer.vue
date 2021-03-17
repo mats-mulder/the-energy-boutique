@@ -5,15 +5,15 @@
 
       <p class="footer-page-title">Wat we oplossen</p>
       <div style="display: table">
-        <img class="img-fluid footer-nav-item mr-3" src="/assets/arrow_left.png">
-        <p id="footer-nav-current" class="footer-nav-item">1</p>
+        <!--<img class="img-fluid footer-nav-item mr-3" src="/assets/arrow_left.png">-->
+        <p id="footer-nav-current" class="footer-nav-item">0</p>
         <div class="footer-nav-item pl-3 pr-3" style="display: table-cell; vertical-align: middle">
           <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
         <p class="footer-nav-item" id="footer-nav-total">3</p>
-        <img class="img-fluid footer-nav-item ml-3" src="/assets/arrow_right.png">
+        <!--<img class="img-fluid footer-nav-item ml-3" src="/assets/arrow_right.png">-->
       </div>
 
     </div>
@@ -47,6 +47,9 @@ export default {
   props: {
     footerLink: String,
   },
+  mounted() {
+    document.getElementById('footer-nav-total').innerText = document.getElementsByClassName('section-fix').length.toString()
+  }
 
 }
 </script>
@@ -56,7 +59,7 @@ export default {
 .footer{
   position: fixed;
   height: 6vh;
-  bottom: 0;
+  bottom: -10vh;
   width: 100%;
   z-index: 150;
 }
@@ -65,11 +68,11 @@ export default {
   position: absolute;
   right: 3vh;
   width: auto;
-  top: 1.25vh;
+  top: 1vh;
 }
 
 .social-holder .col-6{
-  padding: 0 1vh 0 0;
+  padding: 0 0.5vh 0 0;
 }
 
 .social-logo{
@@ -97,7 +100,8 @@ export default {
 
 
 .footer-page-title{
-  font-size: 1.3vh;
+  font-family: Lora;
+  font-size: 0.8rem;
   margin-bottom: -0.5vh;
 
 }
@@ -105,12 +109,43 @@ export default {
 .footer-nav-item{
   display: table-cell;
   transition: 200ms;
-  font-size: 1.3vh;
+  font-size: 0.8rem;
+  font-family: Lora;
 }
 
 .footer-nav-btn:hover{
   cursor: pointer;
   transform: scale(1.1);
+}
+
+.progress-bar{
+  transition: 500ms;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer{
+    height: 8vh;
+  }
+  .social-logo{
+    height: 5vh;
+    width: 5vh;
+    margin-top: 0.5vh;
+  }
+  .progress{
+    width: 25vw;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 991px) {
+
+}
+
+@media only screen and (max-width: 1199px) {
+
 }
 
 </style>

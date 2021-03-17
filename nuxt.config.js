@@ -21,7 +21,6 @@ export default {
       { src:  'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js'},
       { src: '/js/gsap.js'},
       { src: '/js/main.js'},
-      { src: 'https://assets.codepen.io/16327/DrawSVGPlugin3.min.js'},
       { src: "https://code.jquery.com/jquery-3.2.1.slim.min.js"},
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'},
       { src: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'},

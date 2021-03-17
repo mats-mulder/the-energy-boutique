@@ -2,33 +2,33 @@
 
   <div class="container-fluid component-content-right">
     <div class="row">
-      <div class="col-12 text-center section-title">
+      <div class="col-12 text-lg-center section-title" :class="{'small-image-title': content['small_image'] === true}">
         <div class="page-title-top" v-html="content.title.top"></div>
         <div class="page-title-bottom" v-html="content.title.bottom"></div>
       </div>
     </div>
     <div class="row">
-      <div class="col-12 col-lg-6 col-xl-5 p-0">
-        <div class="fixed-image-holder">
-          <img class="img-fluid fixed-image" :src="content.image">
+      <div class="col-12 col-lg-6 col-xl-5">
+        <div class="fixed-image-holder" :class="{'small-image-holder': content['small_image'] === true}">
+          <img class="fixed-image" :src="content.image">
         </div>
       </div>
-      <div class="col-12 col-lg-6 col-xl-7 section-text">
-
-        <h5>{{ content.introduction }}</h5>
-
-        <div class="mt-5" v-for="item in content.content">
+      <div class="col-12 col-lg-6 col-xl-7 section-text" :class="{'small-image-text': content['small_image'] === true}">
+        <h5 class="pb-3">{{ content.introduction }}</h5>
+        <div v-if="content['small_image'] === false" class="mt-4" v-for="(item, sectionIndex) in content.content">
           <h4>{{ item.title }}</h4>
-          <p>{{item['content-block']}}<span style="margin-left: 10px" v-if="item['extra_content_container'].active === true" @click="openExtraContent(item['extra_content_container'].title + '-modal')" class="extra-content-link" >Lees verder →</span></p>
-          <ExtraContentContainer v-if="item['extra_content_container'].active === true" :content="item['extra_content_container']"></ExtraContentContainer>
+          <div :modalId="slideIndex + sectionIndex.toString() + '-modal'" :type="'content'" v-html="item['content-block']" :class="{'read-further-btn': item['extra_content_container'].active === true}"></div>
+          <ExtraContentContainer v-if="item['extra_content_container'].active === true" :content="item['extra_content_container']" :modalId="slideIndex + sectionIndex.toString() + '-modal'" :type="'content'"></ExtraContentContainer>
+        </div>
+        <div v-if="content['small_image'] === true" class="mt-4" v-for="(item, sectionIndex) in content.content">
+          <h4>{{ item.title }}</h4>
+          <div :modalId="slideIndex + sectionIndex.toString() + '-modal'" :type="'content-small'" v-html="item['content-block']" :class="{'read-further-btn': item['extra_content_container'].active === true}"></div>
+          <ExtraContentContainer v-if="item['extra_content_container'].active === true" :content="item['extra_content_container']" :modalId="slideIndex + sectionIndex.toString() + '-modal'" :type="'content-small'"></ExtraContentContainer>
         </div>
       </div>
     </div>
 
-
-
   </div>
-
 
 </template>
 
@@ -38,13 +38,14 @@ export default {
   name: "ContentRight",
   components: {ExtraContentContainer},
   props:{
-    content: Object
+    content: Object,
+    slideIndex: String,
   },
   mounted() {
     fixSectionTitle(['page-title-top', 'page-title-bottom'])
   },
   methods: {
-    openExtraContent: function (name){
+    openeExtraContent: function (name){
       let model = document.getElementById(name)
       let tl = gsap.timeline()
       tl.set(model,{opacity:0})
@@ -80,7 +81,7 @@ export default {
 
 .fixed-image-holder{
   height: 80vh;
-  margin-left: 5vh;
+  margin-left: 5rem;
   overflow: hidden;
   border-radius: 5vh;
 }
@@ -90,26 +91,37 @@ export default {
   margin-left: 0;
   object-fit: cover;
   bottom: 0;
+  height: 100%;
 }
 
 .section-title{
   position: absolute;
   z-index: 100;
-  margin-top: 30vh;
+  margin-top: 3rem;
 }
 
 .section-text{
-  margin-top: 55vh;
-  padding-left: 10vh;
-  padding-right: 10vh;
+  margin-top: 16rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
+.small-image-holder{
+  height: 55vh;
+  margin-top: 5vh;
+}
 
+.small-image-title{
+  position: relative;
+  margin-left: -10vw;
+}
+
+.small-image-text{
+  margin-top: 5vh;
+}
 
 @media only screen and (max-width: 576px) {
-  h1{
-    font-size: 5vh;
-  }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -139,6 +151,16 @@ export default {
     width: 100%;
     object-fit: cover;
   }
+  .component-content-right{
+    opacity: 1;
+  }
+  .section-title{
+    margin-top: 0;
+  }
+}
+
+.testiets p{
+  display: inline-block;
 }
 
 @media only screen and (max-width: 1199px) {

@@ -1,5 +1,5 @@
 <template>
-  <div class="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" :id="content.title + '-modal'">
+  <div class="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" :id="modalId">
     <div class="modal-extra-content">
       <!--
       <div class="header-image-holder">
@@ -7,8 +7,9 @@
         <img class="img-fluid header-image" :src="content.image">
       </div>
     -->
-      <div onclick="closeExtraContent(this)" class="round-btn">
-        <img class="img-fluid" src="/assets/large_arrow_left_white.png">
+      <div onclick="closeExtraContent(this)" :type="type" class="round-btn">
+        <img class="img-fluid arrow-brown" src="/assets/large_arrow_left.png">
+        <img class="img-fluid arrow-white" src="/assets/large_arrow_left_white.png">
       </div>
       <div class="content-container">
         <div class="container">
@@ -36,7 +37,7 @@
       <div class="quote-container" :style="'background-image: url('+ content.quote.image.toString() +')'">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-8 text-center">
+            <div class="col-11 offset-1m col-md-10 col-lg-9 col-xl-8 text-md-center">
               <h3 class="quote-text">{{ content.quote.quote }}</h3>
               <h4 class="mt-4">{{ content.quote.author }}</h4>
             </div>
@@ -52,13 +53,13 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-8">
-              <h5 class="mt-2">{{ content['call_to_action'].description }}.</h5>
+            <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+              <p style="font-size: 1.3rem" class="mt-2">{{ content['call_to_action'].description }}.</p>
             </div>
           </div>
           <div class="row mt-4">
             <div class="col-12">
-              <button type="button" class="btn btn-primary">{{ content['call_to_action'].button }}</button>
+              <a onclick="navigateToContact()"><button type="button" class="btn btn-primary">{{ content['call_to_action'].button }}</button></a>
             </div>
           </div>
         </div>
@@ -73,15 +74,21 @@
 export default {
   name: "ExtraContentContainer",
   props: {
-    content: Object
-  }
+    content: Object,
+    modalId: String,
+    type: String,
+  },
 }
 </script>
 
 <style scoped>
 
+.modal{
+  padding: 0!important;
+  max-width: 100vw;
+}
+
 h1{
-  font-size: 10vh;
   text-decoration: underline var(--curry) 6px;
   margin-bottom: 5vh;
 }
@@ -100,9 +107,9 @@ h1{
 
 
 .content-container{
-  background-color: var(--oxford);
   min-height: 100vh;
-  padding-top: 25vh;
+  padding-top: 20vh;
+  padding-bottom: 15vh;
 }
 
 .content-container .container{
@@ -111,15 +118,20 @@ h1{
 
 .round-btn{
   position: absolute;
-  left: 1.5vh;
-  top: 1.5vh;
-  height: 5vh;
-  width: 5vh;
-  background-color: var(--indigo);
+  left: 20px;
+  top: 20px;
+  height: 60px;
+  width: 60px;
   border-radius: 10vh;
-  padding: 1vh;
   transition: 200ms;
   z-index: 200;
+}
+
+.round-btn img{
+  position: absolute;
+  width: 30px;
+  margin-left: 15px;
+  margin-top: 18px;
 }
 
 .round-btn:hover{
@@ -130,20 +142,8 @@ h1{
 .column-content{
   column-count: 2;
   column-gap: 5vh;
-
 }
 
-h4{
-  font-size: 2.2vh;
-}
-
-h5{
-  font-size: 2vh;
-}
-
-p{
-  font-size: 1.6vh;
-}
 
 .quote-container{
   padding-top: 40vh;
@@ -176,7 +176,6 @@ p{
 .action-container{
   padding-top: 10vh;
   padding-bottom: 10vh;
-  background-color: var(--oxford);
   color: var(--white);
 }
 
@@ -185,20 +184,48 @@ p{
 }
 
 .btn-primary{
-  background-color: var(--curry);
+  background-color: transparent;
   font-family: Lora;
   font-weight: bold;
-  border-radius: 10vh;
-  border: 0px;
-  padding: 1vh 2vh 1vh 2vh;
-  font-size: 1.6vh;
+  border-radius: 100px;
+  border: 1.5px solid var(--curry);
+  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+  font-size: 1rem;
   transition: 200ms;
 }
 
 .btn-primary:hover{
-  padding: 1vh 3vh 1vh 2vh;
+  background-color: var(--curry);
 }
 
+.btn-primary:after{
+  content: "→";
+  margin-left: 1rem;
+  transition: 200ms;
 
+}
+
+.btn-primary:hover:after{
+  content: "→";
+  margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .column-content{
+    column-count: 1;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 991px) {
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+}
 
 </style>

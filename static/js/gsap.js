@@ -18,24 +18,32 @@ function toggleGsap(toggle){
 function newGsap(){
 
   // QUOTE PAGE
-  document.getElementsByClassName('component-quote').forEach(function (section){
-    let parent = section.parentNode
-    let quoteText = section.getElementsByClassName('quote-text')
-    let quoteAuthor = section.getElementsByClassName('quote-author')
+  document.getElementsByClassName('component-page-title').forEach(function (section){
     let tl = gsap.timeline()
-    tl.set([quoteText, quoteAuthor],{opacity: 0})
-    tl.to([quoteText, quoteAuthor],{opacity:1, duration: 2})
-    tl.to([quoteText, quoteAuthor],{opacity:0, duration: 2},6)
     ScrollTrigger.create({
-      trigger: parent,
-      start: "top top",
-      end: "bottom 40%",
+      trigger: section,
+      start: "top 70%",
+      end: "bottom 50%",
       scrub: true,
       animation: tl,
+      onUpdate: self => updateFooter('-1')
     })
   })
 
-  // CONTENT RIGHT
+  document.getElementsByClassName('component-quote').forEach(function (section){
+    let parent = section.parentNode
+    let tl = gsap.timeline()
+    ScrollTrigger.create({
+      trigger: parent,
+      start: "top 70%",
+      end: "bottom 50%",
+      scrub: true,
+      animation: tl,
+      onUpdate: self => updateFooter(section.parentNode.parentNode.id)
+    })
+  })
+
+
   document.getElementsByClassName('component-content-right').forEach(function (section){
     let parent = section.parentNode
     let imageHolder = section.getElementsByClassName('fixed-image-holder')
@@ -44,10 +52,39 @@ function newGsap(){
     let titleTop = section.getElementsByClassName('page-title-top')
     let titleBottom = section.getElementsByClassName('page-title-bottom')
     let tl = gsap.timeline()
+
     tl.set([imageHolder, text, titleTop, titleBottom],{opacity:0})
-    tl.set([imageHolder],{marginLeft: '5vh', duration: 3},0)
-    tl.to([imageHolder, titleTop, titleBottom],{opacity: 1, duration: 3},0)
-    tl.to([imageHolder],{marginLeft: '0', duration: 3},0)
+    tl.to([titleTop, titleBottom],{opacity: 1, duration: 5},0)
+    tl.to([titleTop],{marginLeft: '-10%', duration: 15},0)
+    tl.to([titleBottom],{marginLeft: '25%', duration: 15},0)
+    tl.to(imageHolder,{opacity: 1, duration: 4},6)
+    tl.to([text],{opacity: 1, duration: 3},6)
+    tl.to([image],{marginLeft: '-50%', duration: 15},0)
+    ScrollTrigger.create({
+      trigger: parent,
+      start: "top 70%",
+      end: "bottom 50%",
+      scrub: true,
+      animation: tl,
+      onUpdate: self => updateFooter(section.parentNode.parentNode.id)
+    })
+  })
+
+  //
+  /* CONTENT RIGHT
+  document.getElementsByClassName('component-content-right').forEach(function (section){
+    let parent = section.parentNode
+    let imageHolder = section.getElementsByClassName('fixed-image-holder')
+    let image = section.getElementsByClassName('fixed-image')
+    let text = section.getElementsByClassName('section-text')
+    let titleTop = section.getElementsByClassName('page-title-top')
+    let titleBottom = section.getElementsByClassName('page-title-bottom')
+    let tl = gsap.timeline()
+    tl.set(section,{opacity: 1})
+    tl.set([imageHolder, text, titleTop, titleBottom],{opacity:0})
+    tl.set([imageHolder],{marginLeft: '5vh', duration: 5},0)
+    tl.to([imageHolder, titleTop, titleBottom],{opacity: 1, duration: 5},0)
+    tl.to([imageHolder],{marginLeft: '0', duration: 5},0)
     tl.to([image],{marginLeft: '-50%', duration: 15},0)
     tl.to([titleTop],{marginLeft: '-10%', duration: 15},0)
     tl.to([titleBottom],{marginRight: '-10%', duration: 15},0)
@@ -61,6 +98,34 @@ function newGsap(){
       pin: imageHolder,
       scrub: true,
       animation: tl,
+      onUpdate: self => updateFooter(section.parentNode.parentNode.id)
+    })
+  })
+
+   */
+
+  // IMAGE RIGHT
+  document.getElementsByClassName('component-image-right').forEach(function (section){
+    let parent = section.parentNode
+    let gallery = section.getElementsByClassName('carousel')
+    let titleTop = section.getElementsByClassName('page-title-top')
+    let titleBottom = section.getElementsByClassName('page-title-bottom')
+    let text = section.getElementsByClassName('section-text')
+    let tl = gsap.timeline()
+    tl.set([text, titleTop, titleBottom, gallery],{opacity:0})
+    //tl.set(gallery,{marginTop:'-20vh'})
+    tl.to([titleTop, titleBottom],{opacity: 1, duration: 5},0)
+    tl.to(gallery,{opacity: 1, duration: 4},6)
+    tl.to([titleTop],{marginLeft: '20%', duration: 15},0)
+    tl.to([titleBottom],{marginLeft: '0%', duration: 15},0)
+    tl.to([text],{opacity: 1, duration: 3},6)
+    ScrollTrigger.create({
+      trigger: parent,
+      start: "top 70%",
+      end: "bottom 50%",
+      scrub: true,
+      animation: tl,
+      onUpdate: self => updateFooter(section.parentNode.parentNode.id)
     })
   })
 
@@ -101,17 +166,3 @@ function initGsap(){
 
 }
 
-//Set information in footer navigation
-function setFooter(type){
-  let height = []
-  document.getElementsByTagName('section').forEach(function (sec, index){
-    height.push(Math.abs(sec.getBoundingClientRect().top))
-  })
-  let min = height.indexOf(Math.min(...height));
-  if(type === 'back'){
-    min -= 1
-  }
-  document.getElementsByClassName('progress-bar')[0].style.width = ((((min+1)/height.length)*100).toString() + '%')
-  document.getElementById('footer-nav-current').innerText = (min+1).toString()
-  document.getElementById('footer-nav-total').innerText = (height.length).toString()
-}

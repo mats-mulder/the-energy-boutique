@@ -10,10 +10,8 @@
       </div>
       <div id="menu-overlay">
         <div id="close-btn" onclick="closeMenu()">
-          <svg width="31" height="25" viewBox="0 0 31 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect y="11" width="19" height="3" fill="#524B38"/>
-            <path d="M30.6553 11.842C23.2079 15.0373 19.4819 17.2224 16.0001 24.9999L17.1274 12.5L16.0001 -5.01935e-05C20.3389 8.61932 24.1641 9.17575 30.6553 11.842Z" fill="#524B38"/>
-          </svg>
+          <img class="img-fluid arrow-white" src="/assets/large_arrow_left_white.png">
+          <img class="img-fluid arrow-brown" src="/assets/large_arrow_left.png">
         </div>
         <div class="container" style="padding-top: 15vh">
           <div class="row">
@@ -23,14 +21,14 @@
           </div>
           <div class="row mt-4">
             <div class="col-12">
-              <p onclick="window.location = '../'" class="menu-option current-page">Introductie</p>
-              <p onclick="window.location = '../wat-we-oplossen'" class="menu-option">Wat we oplossen</p>
-              <p onclick="window.location = '../onze-aanpak'" class="menu-option">Onze aanpak</p>
-              <p onclick="window.location = '../contact'" class="menu-option">Contact</p>
+              <p onclick="menuTransition(['#E3B23C','#FFD46F'], '../')" class="menu-option">Introductie</p>
+              <p onclick="menuTransition(['#031D44','#253E63'],'../wat-we-oplossen')" class="menu-option">Wat we oplossen</p>
+              <p onclick="menuTransition(['#E3B23C', '#FFD46F'],'../onze-aanpak')" class="menu-option">Onze aanpak</p>
+              <p onclick="menuTransition(['#DED9D3','#524B38'],'../contact')" class="menu-option">Contact</p>
             </div>
           </div>
         </div>
-        <div class="container-fluid p-0" id="menu-overlay-contact">
+        <div class="container-fluid" id="menu-overlay-contact">
           <div class="container">
           <div class="row pt-5 pb-3">
             <div class="col-10">
@@ -38,17 +36,17 @@
             </div>
           </div>
           <div class="row pb-5">
-            <div class="col-3 vertical-divider">
+            <div class="col-12 col-md-4 col-lg-3 vertical-divider">
               <p>Helen Essers</p>
               <p>info@theenergyboutique.nl</p>
               <p>06 242 049 13</p>
             </div>
-            <div class="col-3 vertical-divider">
+            <div class="col-12 col-md-4 col-lg-3 mt-3 mt-md-0 vertical-divider">
               <p>Nirwana flat</p>
               <p>Benoordenhoutseweg 227D</p>
               <p>2597 BE Den Haag</p>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-md-4 col-lg-3 mt-3 mt-md-0">
               <p>KVK: 74508776</p>
               <p>BTW: NL002155844B96</p>
               <p>Privacy Verklaring</p>
@@ -67,6 +65,12 @@
 
 <script>
 export default {
+  mounted() {
+    let name = window.location.pathname.replace(/\\|\//g,'');
+    let pages = ['','wat-we-oplossen','onze-aanpak','contact']
+    let index  = pages.indexOf(name)
+    document.getElementsByClassName('menu-option')[index].classList.add('current-page')
+  }
 }
 </script>
 
@@ -74,20 +78,23 @@ export default {
 
 body{
   overflow-x: hidden;
+  max-width: 100vw!important;
 }
 
 :root {
-  --curry: #FEC601;
+  --morning: #89B0AE;
+  --curry: #E3B23C;
   --oxford: #031D44;
   --indigo: #253E63;
   --timberwolf: #DED9D3;
-  --silver: #BBB7AB;
+  --silver: #B2AFA6;
+  --light-yellow: #FFD46F;
   --brown: #524B38;
 }
 
 h1{
   font-family: 'Arapey', serif;
-  font-size: 9vh;
+  font-size: 5rem;
   color: white;
   line-height: 100%;
 }
@@ -108,27 +115,31 @@ h4{
   font-family: 'Lora', serif;
   font-weight: 600;
   color: white;
-  font-size: 2.2vh;
+  font-size: 1.3rem;
 }
 
 h5{
   font-family: 'Lora', serif;
   font-weight: 600;
   color: white;
-  font-size: 2.2vh;
+  font-size: 1.3rem
+}
+
+.extra-content-link{
+  margin-left: 10px;
 }
 
 p{
   font-family: 'Lato', serif;
   color: white;
-  font-size: 1.8vh;
+  font-size: 1.1rem;
 }
 
 .extra-content-link{
-  font-family: 'Lato', serif;
+  font-family: Lora;
   font-weight: 700;
   color: white;
-  font-size: 1.8vh;
+  font-size: 1.2rem;
 }
 
 .extra-content-link:hover{
@@ -139,7 +150,8 @@ p{
 .menu-holder{
   position: fixed;
   width: 100%;
-  z-index: 147;
+  z-index: 201;
+  top: 0;
 }
 
 .menu-btn-holder{
@@ -163,7 +175,7 @@ p{
 }
 
 #menu-overlay{
-  height: 100vh;
+  height: 100%;
   z-index: 450;
   display: none;
   margin-left: 100vw;
@@ -173,7 +185,7 @@ p{
 
 .menu-option{
   font-family: 'Arapey', serif;
-  font-size: 8vh;
+  font-size: 5rem;
   line-height: 120%;
   transition: 250ms;
   opacity: 0;
@@ -191,7 +203,7 @@ p{
 }
 
 #menu-overlay-contact h4{
-   font-size: 2.5vh;
+   font-size: 1.8rem;
 }
 
 #menu-overlay-contact p{
@@ -200,7 +212,7 @@ p{
 
 .vertical-divider{
   border-right: 1px solid var(--brown);
-  margin-right: 50px;
+  padding-right: 25px;
 }
 
 .language-choice{
@@ -225,7 +237,6 @@ p{
   right: 20px;
   top: 20px;
   background-color: var(--timberwolf);
-  padding: 1.5vh;
   border-radius: 5vh;
   transition: 200ms;
   height: 60px;
@@ -237,9 +248,16 @@ p{
   cursor: pointer;
 }
 
+#close-btn img{
+  position: absolute;
+  width: 30px;
+  margin-left: 15px;
+  margin-top: 18px;
+  transform: rotate(180deg);
+}
+
 .section-fix{
-  min-height: 100vh;
-  padding: 0;
+  margin-bottom: 25vh;
 }
 
 i{
@@ -252,10 +270,18 @@ i{
 }
 
 
-
 @media only screen and (max-width: 576px) {
   h1{
-    font-size: 7vh;
+    font-size: 1.6rem;
+  }
+  #menu-overlay-contact{
+    display: none;
+  }
+  .menu-option{
+    font-size: 2.5rem;
+  }
+  h4{
+    font-size: 1.5rem;
   }
 }
 
