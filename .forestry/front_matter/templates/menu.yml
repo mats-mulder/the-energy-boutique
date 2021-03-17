@@ -3,27 +3,19 @@ label: Menu
 hide_body: true
 fields:
 - name: page_titles
-  type: field_group
-  config: {}
+  type: field_group_list
   fields:
-  - name: frist
+  - name: title
     type: text
     config:
       required: true
-    label: Frist
-  - name: second
-    type: text
-    config:
-      required: true
-    label: Second
-  - name: third
-    type: text
-    config:
-      required: true
-    label: Third
-  - name: fourth
-    type: text
-    config:
-      required: true
-    label: Fourth
+    label: Title
+  - name: tags
+    type: tag_list
+    default: []
+    label: Tags
+  config:
+    min: 4
+    max: 4
+    labelField: 
   label: Page Titles
