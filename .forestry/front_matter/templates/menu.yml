@@ -56,3 +56,5 @@ fields:
         format: html-blocks
     label: Legal Information
   label: Contact Information
+pages:
+- content/global/menu.md
