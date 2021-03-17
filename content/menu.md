@@ -10,7 +10,7 @@ page_titles:
   - Visie
   - Methodes
   - Expertise
-- title: Contact
+- title: Aan de slag
   tags:
   - Contactgegevens
   - Prijzen
