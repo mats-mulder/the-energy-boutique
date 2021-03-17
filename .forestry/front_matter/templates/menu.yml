@@ -1,4 +1,29 @@
 ---
 label: Menu
 hide_body: true
-fields: []
+fields:
+- name: page_titles
+  type: field_group
+  config: {}
+  fields:
+  - name: frist
+    type: text
+    config:
+      required: true
+    label: Frist
+  - name: second
+    type: text
+    config:
+      required: true
+    label: Second
+  - name: third
+    type: text
+    config:
+      required: true
+    label: Third
+  - name: fourth
+    type: text
+    config:
+      required: true
+    label: Fourth
+  label: Page Titles
