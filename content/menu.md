@@ -19,7 +19,8 @@ contact_information:
   title: The Energy Boutique
   personal_information: "<p>Helen Essers<br>info@theenergyboutique.nl<br>06 242 049
     13</p>"
-  adres_information: "<p>Nirwana flat<br>Benoordenhoutseweg 227D<br>2597 BE Den Haag</p>"
+  adres_information: <p><a href="/images/routebeschrijving.pdf" title="">Nirwana flat<br>Benoordenhoutseweg
+    227D<br>2597 BE Den Haag</a></p>
   legal_information: '<p>KVK: 74508776<br>BTW: NL002155844B9<br><a href="/images/privacy-verklaring-the-energy-boutique.pdf"
     title="">Privacy Verklaring</a></p>'
 
