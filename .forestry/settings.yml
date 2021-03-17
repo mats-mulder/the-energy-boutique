@@ -21,6 +21,12 @@ sections:
 - type: document
   path: content/contact.md
   label: Contact
+- type: heading
+  label: Global Content
+- type: document
+  path: content/global/menu.md
+  label: Menu
+  match: "**/*"
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
